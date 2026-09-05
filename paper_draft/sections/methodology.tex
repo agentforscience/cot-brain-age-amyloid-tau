@@ -1,0 +1,155 @@
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Tasks and data}
+\label{sec:method:data}
+
+We use three tasks built from open cohorts. ADNI, TADPOLE, AIBL and OASIS-3 are all access-gated,
+so we replicate the \emph{protocols} of the prior work on open data rather than their exact
+benchmarks; \secref{sec:discussion} states the consequence for cross-paper comparison. Every split
+is grouped by donor or subject, never by row, because \act samples four brain regions per donor and
+\oasis has repeat visits per subject. \tabref{tab:datasets} summarises the three tasks.
+
+\input{tables/datasets}
+
+\para{\taskone (primary).} The Allen \emph{Aging, Dementia and TBI} study provides real quantified
+neuropathology: A$\beta$40, A$\beta$42, total tau and pTau in pg or ng per mg of tissue, AT8 /
+Tau-2 / A$\beta$ immunoreactivity, GFAP, IBA1 and $\alpha$-synuclein, together with APOE4 status,
+age, sex and education. The target is Braak stage IV--VI (\ie limbic and neocortical spread of
+neurofibrillary tau). Braak stage is a semiquantitative topographic stage assigned by a
+neuropathologist and is a distinct measurement from the regional immunoreactivity assays, so this
+is a genuine biomarker-to-stage prediction task rather than label leakage.
+
+\para{\tasktwo.} OASIS-1 and OASIS-2 pooled~\citep{marcus2007oasis}, restricted to cognitively
+normal scans, predicting chronological age (18--98\,y) from nWBV, eTIV, ASF and sex. We fit the
+normative model on controls only, remove the standard regression-to-the-mean bias by regressing
+predicted on chronological age within controls, and apply the corrected brain-age gap (\bag) to
+demented scans as a clinical endpoint.
+
+\para{\taskthree.} OASIS-2 under the \ltoc transform of \citet{ding2025l2ctabpfn}, reimplemented
+from their equations (1)--(7): most-recent value and its lag, change rate, minimum and maximum and
+their lags, per numeric feature, plus a forecast-horizon feature.
+
+\para{Two pre-implementation amendments.} Both were fixed after inspecting the data and before any
+LLM was run, and both are audited in the results. \emph{(A1)} \taskone's target was changed from
+NIA-Reagan intermediate/high to Braak $\geq$\,IV. NIA-Reagan is positive in 81/107 donors (75.7\%),
+leaving 26 negative donors---far too few for a donor-clustered bootstrap to resolve a
+$\Delta$AUC of 0.05. Braak $\geq$\,IV is 45.8\% positive. We retain the original target as a
+secondary audit; every model is near chance on it (best AUC 0.674), confirming that the change was
+necessary rather than opportunistic. \emph{(A2)} \taskthree's feature block was de-circularised.
+With the full \ltoc features, \emph{every} tabular model reached AUC $=1.000$, and permutation
+importance showed one feature carrying all of it (prior-visit dementia status, $\Delta$AUC 0.235;
+every other feature $\approx 10^{-17}$). The cause is definitional: OASIS derives its dementia label
+from CDR, so prior-visit CDR and dementia status are the label, lagged. We removed all CDR- and
+dementia-derived history features, leaving 18 cognitive, structural, demographic and temporal
+features and a non-trivial problem (\xgb AUC 0.840). We report this as a data-provenance finding in
+its own right: an \ltoc-style pipeline applied naively to OASIS-2 produces a perfect and meaningless
+benchmark.
+
+\subsection{Arms}
+\label{sec:method:arms}
+
+\para{Tabular (black-box) arm.} L2-regularised logistic (or ridge) regression on median-imputed,
+standardised features; \xgb (300 trees, depth 3, learning rate 0.05, native NaN handling);
+\tabpfn~\citep{hollmann2023tabpfn} from local checkpoints; and a trivial reference (majority class
+or mean age) to detect ceiling and floor effects. All are fitted under the identical grouped 5-fold
+cross-validation.
+
+\para{LLM arm.} \qwenseven-Instruct (primary) and \qwensmall-Instruct (model-size arm), run locally
+in bf16. Three prompt conditions share an identical case rendering, identical in-context exemplars,
+and identical greedy decoding:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \direct---``Do NOT explain, do NOT reason\ldots{} output ONLY the final answer line.''
+    \item \cotarm---``Reason step by step\ldots{} structure your reasoning as an explicit chain over
+    intermediate biological factors, \eg amyloid burden $\rightarrow$ tau pathology $\rightarrow$
+    neurodegeneration $\rightarrow$ clinical outcome. At each step name the specific measurement you
+    are using and what it implies.''
+    \item \filler---the \direct instruction, but the assistant turn is force-prefilled with a run of
+    ``\texttt{.}'' tokens whose count equals the measured median \cotarm length for that task
+    (159/161/150 tokens for \taskone/\tasktwo/\taskthree). This is the compute control of
+    \citet{lanham2023faithfulness}: identical extra forward passes, zero semantic content.
+\end{itemize}
+In-context exemplars ($k=8$) come only from the current fold's training split, are class-balanced
+(classification) or age-spread (regression), take one row per group so no donor appears twice, and
+are shuffled so exemplar order carries no label signal. The target and all label-derived columns are
+stripped from every prompt. Critically, the tabular and LLM arms consume the \emph{same} feature
+list, defined once in shared code, so the comparison is like-for-like.
+
+\subsection{Faithfulness metrics}
+\label{sec:method:faith}
+
+The hypothesis we test calls for clinician ratings. No clinician panel is available to an automated
+pipeline, and we did not simulate one. Instead we measure something stronger than a rating---whether
+the answer causally depends on the stated reasoning.
+
+\para{Early answering.} Truncate the chain at $0, 20, 40, 60, 80, 100\%$ of its sentences and force
+an answer. Let $a(f)$ be the rate at which the answer produced from a fraction $f$ of the chain
+matches the full-chain answer. We report the area over the curve, $\aoc = \int_0^1 \left(1 -
+a(f)\right)\,df$, estimated by the trapezoid rule. $\aoc \approx 0$ means the answer was already
+fixed before the reasoning was written.
+
+\para{Adding mistakes.} Multiply or divide the first numeric value in the second half of the chain
+by ten, truncate there, and let the model continue. We report the rate at which the final answer
+changes.
+
+\para{Paraphrasing.} Reword the chain while preserving all values and conclusions, then regenerate.
+A high change rate would indicate encoded or steganographic reasoning.
+
+\para{Continuous-target adaptation.} For \tasktwo, ``did the answer flip?'' is undefined. We replace
+it with a normalised answer shift,
+\begin{equation}
+    \delta = \frac{|\hat{y}_{\text{intervened}} - \hat{y}_{\text{full}}|}{\mathrm{SD}(\hat{y})},
+    \label{eq:shift}
+\end{equation}
+where $\mathrm{SD}(\hat{y})$ is the dispersion of the model's own predictions on the task. An
+intervention ``changes the answer'' when $\delta$ exceeds a fixed threshold, and the early-answering
+curve uses $1-\min(\delta,1)$ in place of the agreement rate. This makes all four tests
+well-defined for regression.
+
+\para{\cfit (Cited-Feature Intervention Test).} We parse which biomarkers a chain names as decisive
+using a conservative lexical citation table, then perturb by $\pm 1$\,SD (i) the cited features and
+(ii) an equal-sized random set of features the chain does not name, and compare the induced
+prediction shift. A faithful explanation must be more sensitive to what it says it used than to what
+it passed over. We report the cited/uncited ratio with a paired clustered bootstrap and a Wilcoxon
+signed-rank test.
+
+\para{\esa (Explanation--Signal Alignment).} We rank-correlate per-feature citation frequency across
+all chains against permutation importance measured independently on the black-box arm (Spearman
+$\rho$). \cfit asks whether a chain's citations drive \emph{its own} answer; \esa asks whether they
+coincide with the features that carry \emph{real} signal.
+
+\para{Blinded plausibility rubric.} As an explicit substitute for the impossible clinician panel, an
+LLM judge scores each rationale on six dimensions (grounding, biological validity, coherence,
+specificity, absence of fabrication, clinical usefulness) on a 0--4 scale. The judge never sees the
+label, never sees whether the prediction was correct, and never sees which condition produced the
+text; items are shuffled. A \emph{shuffled-explanation control} pairs each case with a different
+case's rationale: if the rubric cannot separate genuine from mismatched rationales it has no
+discriminative validity. These are LLM-proxy scores and must not be read as clinician ratings.
+
+\subsection{Robustness protocol}
+\label{sec:method:robust}
+
+A single function generates both perturbations and every arm receives the same
+$(\textit{kind},\textit{level},\textit{seed})$, so the LLM sees literally the same corrupted numbers
+the tabular model sees. We sweep MCAR missingness at $0/10/20/30/50\%$ of feature cells (LLM arm:
+$0/20/50\%$) and Gaussian noise at $0.25/0.5/1.0$\,SD of each continuous feature (LLM arm:
+$0/1.0$\,SD); binary indicators are excluded from the noise sweep. Only test cases are perturbed and
+training data stays clean, which is the deployment scenario the robustness claim concerns.
+
+\subsection{Statistics and reproducibility}
+\label{sec:method:stats}
+
+All confidence intervals are donor- or subject-clustered bootstraps ($B=2000$); a row-level
+bootstrap would understate uncertainty given repeated regions and visits. Paired arm-versus-arm
+contrasts resample the same clusters for both arms and take the difference inside the resample,
+supplemented by McNemar's test on paired binary correctness and Wilcoxon signed-rank on paired
+absolute errors. We control Benjamini--Hochberg FDR ($q$) within each metric family, with
+$\alpha=0.05$, two-sided. Equivalence margins for ``matches accuracy'' were pre-declared:
+$\Delta\text{AUC}=0.05$ and $\Delta\text{MAE}=1.5$\,years.
+
+Seed 42 throughout, with folds assigned by seeded permutation of group IDs so any script reproduces
+byte-identical splits. Greedy decoding (\texttt{do\_sample=False}) is fixed across every arm,
+condition and model, so accuracy differences cannot be attributed to sampling. Total LLM
+generations: $\approx$14{,}500 (7{,}500 accuracy, 5{,}353 faithfulness interventions, 720 judge, 972
+brain-age extension), $\approx$2\,h on 2$\times$NVIDIA RTX A6000. All work ran offline on locally
+staged weights.

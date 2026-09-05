@@ -1,0 +1,26 @@
+\begin{table}[t]
+    \centering
+    \resizebox{0.85\textwidth}{!}{%
+    \begin{tabular}{@{}llccccc@{}}
+        \toprule
+        Arm & Family & \bag in demented & \bag in controls & ROC-AUC [95\% CI] & Cohen's $d$ & $p$ \\
+        \midrule
+        \tabpfn & tabular & {\bf $+4.26$\,y} & 0.00 & {\bf 0.701} [0.646, 0.757] & {\bf 0.730} & $<10^{-4}$ \\
+        \logreg & tabular & $+3.90$\,y & 0.00 & 0.691 [0.633, 0.749] & 0.660 & $<10^{-4}$ \\
+        \xgb    & tabular & $+4.10$\,y & 0.00 & 0.683 [0.628, 0.737] & 0.664 & $<10^{-4}$ \\
+        \midrule
+        \cotarm    & llm     & $+0.15$\,y & 0.00 & 0.490 [0.435, 0.547] & 0.015 & 0.670 \\
+        \direct & llm     & $-0.20$\,y & 0.00 & 0.470 [0.408, 0.535] & $-0.019$ & 0.202 \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{
+        The clinical endpoint. Normative models are fitted on cognitively normal scans only and the
+        regression-to-the-mean bias is removed within controls, so the control gap is zero by
+        construction. The conventional models reproduce the textbook finding of roughly four years
+        of apparent brain ageing in dementia; the \cotarm-derived gap carries no disease signal at all
+        (AUC 0.490, $p=0.670$). The chains are articulate about atrophy and ageing, and the quantity
+        they produce is diagnostically empty.
+    }
+    \label{tab:brainage}
+\end{table}

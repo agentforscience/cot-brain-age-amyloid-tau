@@ -1,0 +1,22 @@
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llccll@{}}
+        \toprule
+        \textsc{Task} & \textsc{Cohort} & \textsc{Rows} & \textsc{Groups} & \textsc{Target} & \textsc{Base rate} \\
+        \midrule
+        \taskone (primary) & \act & 377 region-samples & 107 donors & Braak stage IV--VI & 46.9\% positive \\
+        \tasktwo           & \oasis-1 $+$ \oasis-2 & 323 scans & 207 subjects & chronological age (18--98\,y) & --- (regression) \\
+        \taskthree         & \oasis-2 under \ltoc & 223 visit-predictions & 150 subjects & dementia at target visit & 47.1\% positive \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{
+        The three tasks. \taskone uses real quantified A$\beta$40/A$\beta$42/tau/pTau assays and
+        immunoreactivity from post-mortem tissue; \tasktwo uses cognitively normal scans only, so
+        the normative model is fitted on controls; \taskthree reimplements the
+        longitudinal-to-cross-sectional transform of \citet{ding2025l2ctabpfn} on open data. All
+        splits are grouped by donor or subject.
+    }
+    \label{tab:datasets}
+\end{table}

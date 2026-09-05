@@ -1,0 +1,47 @@
+\begin{table}[t]
+    \centering
+    \begin{minipage}{0.49\textwidth}
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lcccc@{}}
+        \toprule
+        Task & Cited & Uncited & Ratio & $p$ (boot) \\
+        \midrule
+        \taskone   & 0.279 & 0.200 & 1.39$\times$ & 0.090 \\
+        \taskthree & 0.364 & 0.171 & {\bf 2.13$\times$} & {\bf 0.0005} \\
+        \tasktwo   & 0.669 & 0.434 & {\bf 1.54$\times$} & {\bf 0.007} \\
+        \bottomrule
+    \end{tabular}
+    }
+    \subcaption{\cfit: normalised prediction shift when the features a chain names as decisive are
+    perturbed by $\pm1$\,SD, versus an equal-sized random set it ignores.}
+    \label{tab:cfit}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.49\textwidth}
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lccl@{}}
+        \toprule
+        Task & Spearman $\rho$ & $p$ & Highest-signal feature \\
+        \midrule
+        \taskone   & 0.126 & 0.629 & AT8 ($\Delta$AUC 0.110) \\
+        \taskthree & {\bf 0.491} & {\bf 0.039} & lowest-ever MMSE (0.126) \\
+        \tasktwo   & 0.105 & 0.895 & nWBV (6.39\,y) \\
+        \bottomrule
+    \end{tabular}
+    }
+    \subcaption{\esa: rank correlation between per-feature citation frequency and permutation
+    importance measured independently on the black-box arm.}
+    \label{tab:esa}
+    \end{minipage}
+    \caption{
+        The two new interpretability metrics. \cfit is the one clear positive for
+        CoT-as-interpretability: the measurements a chain points at are more influential than the
+        ones it passes over, significantly so on \taskthree and \tasktwo. \esa is negative on the
+        primary task---the chains cite total tau and pTau in 100\% of cases and AT8 in 98.6\%, so
+        citation frequency carries almost no information about which biomarker matters. An
+        explanation that names everything explains nothing.
+    }
+    \label{tab:cfit_esa}
+\end{table}

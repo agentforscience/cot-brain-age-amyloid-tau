@@ -1,0 +1,35 @@
+\section{Additional Experimental Detail}
+\label{app:detail}
+
+\para{Software and hardware.} Python 3.12.8, torch 2.13.0+cu130, transformers 5.15.1,
+scikit-learn 1.9.0, xgboost 3.4.1, tabpfn 8.4.0, numpy 2.5.2, pandas 3.0.5. Two NVIDIA RTX A6000
+(48\,GB) were used concurrently, one task per GPU, for approximately two hours of end-to-end GPU
+time. All LLM weights were staged locally; no external API was called at any point.
+
+\para{Generation budget.} Approximately 14{,}500 generations in total: 7{,}500 in the accuracy arm
+(5{,}469 for \qwenseven across the three tasks plus 2{,}031 for \qwensmall), 5{,}353 for the
+faithfulness interventions, 720 for the blinded judge, and 972 for the brain-age-gap extension.
+The full set of raw generations---prompt, chain, parsed answer---is retained alongside the
+per-case intervention outcomes and the judge scores including the shuffled control.
+
+\para{Filler-token lengths.} The \filler condition prefills the assistant turn with a run of
+``\texttt{.}'' tokens whose count equals the measured median \cotarm length for that task: 159 tokens
+for \taskone, 161 for \tasktwo, and 150 for \taskthree. This matches the number of extra forward
+passes to the \cotarm condition while carrying no semantic content.
+
+\para{Per-dimension rubric scores on \taskone (genuine rationales).} NO\_FABRICATION 4.00,
+BIOLOGY 3.96, COHERENCE 3.70, GROUNDING 3.64, CLINICAL\_USE 3.44, SPECIFICITY 3.29. The lowest
+dimension is specificity, which is consistent with the \esa result: the chains name many
+measurements without committing to which one decides the case.
+
+\para{Amendment A1 audit.} With the original NIA-Reagan target, the best tabular model reaches
+AUC 0.674 and the trivial baseline is uninformative, confirming that the 75.7\% positive rate left
+too little signal for a donor-clustered bootstrap to resolve differences at the pre-declared
+$\Delta\text{AUC}=0.05$ margin. The Braak $\geq$\,IV target used in the main text is 45.8\% positive
+at the donor level and yields a well-powered comparison.
+
+\para{Amendment A2 audit.} With the full \ltoc feature block on OASIS-2, logistic regression,
+\xgb and \tabpfn all reach AUC $=1.000$, and permutation importance attributes $\Delta$AUC 0.235 to
+prior-visit dementia status with every other feature at $\approx 10^{-17}$. After removing all CDR-
+and dementia-derived history features, 18 cognitive, structural, demographic and temporal features
+remain and \xgb reaches AUC 0.840.

@@ -1,0 +1,48 @@
+\section{Related Work}
+\label{sec:related}
+
+\para{AD biomarker prediction and its interpretability layer.} Longitudinal AD progression
+prediction is a mature, benchmark-driven field in which gradient-boosted trees remain the model to
+beat. \citet{ding2025l2ctabpfn}---our primary reference---pair the longitudinal-to-cross-sectional
+(\ltoc) feature transform with \tabpfn~\citep{hollmann2023tabpfn} on TADPOLE~\citep{marinescu2020tadpole},
+and beat or match the \ltoc$+$\xgb ``Frog'' baseline~\citep{chen2016xgboost} across diagnosis,
+ADAS-Cog, and ventricular volume. Their interpretability is delivered entirely through SHAP summary
+plots, compared qualitatively; there is no faithfulness test and no human evaluation. The brain-age
+literature is similar: \citet{more2023brainage} review deep brain-age models and standardise on MAE
+in years with the well-known regression-to-the-mean bias correction, and \citet{lee2021disentangling}
+motivate fitting normative models on controls only, but interpretability is again architectural or
+post-hoc~\citep{sihag2023vnn,nakamura2025openmap}. Concept-bottleneck
+models~\citep{zarlenga2022cem,kim2024clinicalcbm} are the main rival paradigm---they force
+predictions through human-named concepts. A CoT chain is essentially a generative, unconstrained
+bottleneck; we treat CBMs as the contrast class rather than build one.
+
+\para{Tabular LLMs for Alzheimer's disease.} \citet{kearney2026tapgpt} LoRA-finetune a
+schema-aware tabular LLM for few-shot AD-vs-CN classification on ADNI-derived tables including
+amyloid and tau PET. Their model matches \tabpfn in low-shot settings and is stable to roughly 40\%
+missingness, because LLM prompts represent missing cells natively and need no imputation. Two of
+their design decisions drive ours: disjoint per-split in-context pools to avoid leakage, and the
+missingness sweep we replicate in \secref{sec:results}. Their decisive omission is that they
+disabled reasoning modes outright. Unlike \citet{kearney2026tapgpt}, we enable reasoning, and we
+measure what it costs and whether it explains anything.
+
+\para{Measuring whether a chain is causal.} \citet{lanham2023faithfulness} supply the battery this
+question needs: truncate the chain and force an answer (early answering), corrupt a step and
+regenerate (adding mistakes), reword the chain (paraphrasing), and replace it with meaningless
+tokens (filler). Their central finding---larger models produce \emph{less} faithful
+reasoning---was refined by \citet{bentham2024disguised}, who show the size effect is partly
+disguised accuracy and must be accuracy-controlled. Related work finds that CoT influence and CoT
+faithfulness are not aligned~\citep{parcalabescu2025influence}, and that models reach correct
+answers through invalid reasoning~\citep{bao2024invalid}. Building on
+\citet{lanham2023faithfulness}, we transplant the battery to a clinical setting, adapt it to a
+continuous target, and follow \citet{bentham2024disguised} in reporting accuracy and faithfulness
+jointly in our model-size comparison.
+
+\para{Skeptical evidence in the clinical domain.} We deliberately over-sampled counter-evidence.
+\citet{anon2026dementiaspeech} find that naive text-rationale strategies produce hallucinated,
+inconsistent rationales and \emph{inferior} dementia-classification accuracy versus LLM-free
+baselines. \citet{smit2024mad} show multi-agent debate does not reliably beat self-consistency,
+which is why we pruned a debate arm. \citet{lyu2024faithfulsurvey} argue interpretability must be
+scored on faithfulness, robustness \emph{and} utility rather than any one axis---a framing we adopt
+by reporting all three. Our results corroborate \citet{anon2026dementiaspeech} and extend their
+conclusion from speech to quantitative biomarker tables, while adding the causal measurement that
+none of these papers perform.

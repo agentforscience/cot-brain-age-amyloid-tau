@@ -1,0 +1,31 @@
+\begin{table}[t]
+    \centering
+    \resizebox{0.8\textwidth}{!}{%
+    \begin{tabular}{@{}llccr@{}}
+        \toprule
+        Task & Arm & Clean & 50\% MCAR & Relative change \\
+        \midrule
+        \taskone   & \xgb    & 0.794 & 0.630 & $-20.6\%$ \\
+        \taskone   & \logreg & 0.742 & 0.668 & $-10.1\%$ \\
+        \taskone   & \cotarm    & 0.595 & 0.609 & {\bf $+2.4\%$} \\
+        \taskone   & \direct & 0.654 & 0.599 & $-8.4\%$ \\
+        \midrule
+        \taskthree & \xgb    & 0.840 & 0.725 & $-13.7\%$ \\
+        \taskthree & \tabpfn & 0.842 & 0.800 & {\bf $-5.0\%$} \\
+        \taskthree & \cotarm    & 0.712 & 0.554 & $-22.2\%$ \\
+        \midrule
+        \tasktwo   & \xgb    & 5.68\,y & 14.23\,y & $+150.5\%$ (worse) \\
+        \tasktwo   & \tabpfn & 5.28\,y & 8.01\,y & $+51.9\%$ (worse) \\
+        \tasktwo   & \cotarm    & 11.28\,y & 10.83\,y & {\bf $-4.0\%$} (better) \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{
+        Degradation from clean data to 50\% MCAR missingness (AUC for \taskone/\taskthree, MAE for
+        \tasktwo). The \cotarm arm is essentially flat under missingness on \taskone and \tasktwo---but
+        flat at a level the baselines only fall \emph{to} under extreme corruption. On \taskthree it
+        is the least robust arm of all. The robustness claim is supported in slope and vacuous in
+        level.
+    }
+    \label{tab:robustness}
+\end{table}

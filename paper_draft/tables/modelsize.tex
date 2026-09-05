@@ -1,0 +1,31 @@
+\begin{table}[t]
+    \centering
+    \resizebox{0.8\textwidth}{!}{%
+    \begin{tabular}{@{}lcc@{}}
+        \toprule
+        Quantity (\taskone) & \qwensmall & \qwenseven \\
+        \midrule
+        ROC-AUC, \direct & 0.504 & {\bf 0.676} \\
+        ROC-AUC, \filler & 0.526 & {\bf 0.706} \\
+        ROC-AUC, \cotarm    & 0.586 & 0.616 \\
+        $\Delta$AUC (\cotarm $-$ \direct) & {\bf $+0.082$} [$+0.018$, $+0.143$], $p=0.012$ & $-0.060$ [$-0.127$, $+0.009$], $p=0.084$ \\
+        \midrule
+        Early-answering \aoc & {\bf 0.246} [0.206, 0.289] & 0.066 [0.042, 0.093] \\
+        Mistake-injection change rate & {\bf 0.218} [0.144, 0.296] & 0.036 [0.000, 0.079] \\
+        Paraphrase change rate & 0.079 & 0.014 \\
+        \midrule
+        Median chain length (chars) & 1414 & 642 \\
+        Forced-answer rate (chain over-ran budget) & 0.456 & 0.000 \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{
+        Accuracy and faithfulness reported jointly, as \citet{bentham2024disguised} require. The
+        1.5B model cannot do the task without reasoning (\direct AUC 0.504 $\approx$ chance), CoT
+        lifts it to 0.586, and its chains are 3.7$\times$ more causally load-bearing and 6$\times$
+        more sensitive to injected mistakes. The 7B model already knows the answer, its chains are
+        decorative, and verbalising them costs accuracy. The 1.5B forced-answer rate is a caveat
+        on the magnitude, not the direction (\secref{sec:discussion}).
+    }
+    \label{tab:modelsize}
+\end{table}

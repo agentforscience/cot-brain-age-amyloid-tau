@@ -1,0 +1,1703 @@
+row,group,y,full_pred,para_pred,changed,para_text
+3,326765668,0.0,1,1,0.0,"High Abeta-42 levels are associated with elevated total tau levels, leading to an increased risk of neurofibrillary tangles. This correlation supports the hypothesis that high Abeta-42 levels may indicate early stages of tauopathy."
+6,326765677,1.0,1,1,0.0,"Given the high Abeta-42 levels, elevated total tau, and signs of neuroinflammation but minimal changes in tau protein distribution, the patient likely has advanced tau pathology."
+9,309335497,1.0,1,1,0.0,"High Abeta-42 levels (495.0 pg/mg) suggest significant accumulation of beta-amyloid plaques, leading to increased tau phosphorylation and neurofibrillary tangles. Moderate total tau (1.083 ng/mg) and low pTau/total-tau ratio (0.6864) indicate ongoing tau pathology without excessive aggregation. Phospho-tau (0.7437 ng/mg) confirms active tau hyperphosphorylation, supporting the inference of moderate-to-high tau pathology."
+10,326765662,1.0,0,0,0.0,"Given the high Abeta-42 levels, moderate total tau, and normal pTau/total-tau ratio, along with absence of significant neurofibrillary tangles, the patient likely falls into the category of early tau pathology rather than advanced tau pathology."
+11,326765653,0.0,1,1,0.0,"The analysis of Abeta-42, Abeta-40, Abeta-42/40 ratios, total tau, phospho-tau, and pTau/total-tau ratios reveals that the patient exhibits high total tau and phospho-tau levels, indicating advanced tau pathology. The low pTau/total-tau ratio further supports this diagnosis."
+22,467056397,1.0,1,1,0.0,"Given the high Abeta-42 levels, the elevated total tau content, and the lack of visible neurofibrillary tangles, the patient likely exhibits advanced tau pathology rather than early tau pathology."
+60,326765674,1.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the PCx sample.
+
+- **Abeta-42 pg/mg tissue**: 531.9 pg/mg
+- **Abeta-40 pg/mg tissue**: 2.1 pg/mg
+- **Abeta-42/40 ratio**: 253.3
+
+This high Abeta-42 level suggests significant accumulation of beta-amyloid plaques, leading to increased neurofibrillary tangles due to oxidative stress and inflammation.
+
+**Step 2:** Examine the total tau content.
+
+- **Total tau ng/mg tissue**: 1.103 ng/mg
+
+A higher total tau concentration confirms the presence of neurofibrillary tangles, consistent with beta-amyloid plaques.
+
+**Step 3:** Assess the phospho-tau levels.
+
+- **Phospho-tau ng/mg tissue**: 1.193 ng/mg
+
+The elevated phospho-tau level substantiates the presence of neurofibrillary tangles, indicating ongoing tauopathy.
+
+**Step 4:** Evaluate the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 1.082
+
+An elevated pTau/total-tau ratio indicates active tau phosphorylation, characteristic of advanced tau pathology.
+
+**Conclusion:** Based on the high Abeta-42, total tau, phospho-tau, and pTau/total-tau ratios, as well as the advanced tau pathology suggested by these measurements, we conclude that the donor exhibits **ADVANCED tau pathology**."
+61,309335469,1.0,1,1,0.0,"High Abeta-42 levels (126.1 pg/mg) and an elevated pTau/total-tau ratio (1.474) indicate significant tau pathology, suggesting that the patient is experiencing advanced neurodegeneration with both amyloid-beta and tau accumulation."
+65,309335455,0.0,1,1,0.0,"**Step 1:** Examine the Abeta-42 concentration in the TCx sample.
+
+- **Abeta-42 pg/mg tissue**: 0.1934
+- **Abeta-40 pg/mg tissue**: 0.2784
+- **Abeta-42/40 ratio**: 0.6947
+
+This shows elevated Abeta-42 levels while maintaining moderate Abeta-40 levels, potentially indicative of an intermediate stage of Alzheimer’s disease according to additional biomarker data.
+
+**Step 2:** Assess the overall Tau content.
+
+- **Total Tau ng/mg tissue**: 1.691
+
+An increase in Total Tau signifies the presence of neurofibrillary tangles, aligning with more advanced stages of tauopathies.
+
+**Step 3:** Investigate the Phosphorylated Tau level.
+
+- **Phospho-Tau ng/mg tissue**: 0.4264
+
+The Phospho-Tau level is notably lower than the Total Tau level, reflecting earlier stages of tau pathology.
+
+**Step 4:** Evaluate the pTau/Total Tau ratio.
+
+- **pTau/Total Tau ratio**: 0.2522
+
+A lower pTau/Total Tau ratio corresponds to earlier stages of tau pathology.
+
+**Step 5:** Analyze Abeta Immunoreactivity and Related Markers.
+
+- **Abeta Immunoreactivity, Fraction of Area**: 0.004676
+- **AT8 pTau Immunoreactivity, Fraction of Area**: 2.618e-04
+- **Tau-2 Immunoreactivity (FFPE), Fraction of Area**: 0.003957
+- **Alpha-Synuclein Immunoreactivity, Fraction of Area**: 4.912e-05
+- **GFAP Astrogliosis,"
+71,467056397,1.0,1,1,0.0,"Given the high Abeta-42 levels, substantial total tau, elevated phospho-tau, and normal alpha-synuclein and synucleinopathies, the patient is exhibiting advanced tau pathology."
+72,326765679,1.0,1,1,0.0,"**Step 1:** Analyze the levels of Abeta-42 in the TCx sample.
+
+- **Abeta-42 pg/mg tissue**: 339.5 pg/mg
+- **Abeta-40 pg/mg tissue**: 23.99 pg/mg
+- **Abeta-42/40 ratio**: 14.15
+
+This shows elevated Abeta-42 levels with lower Abeta-40 levels, possibly indicating an accumulation of beta-amyloid plaques without significant neurofibrillary tangles.
+
+**Step 2:** Evaluate the total tau level.
+
+- **Total tau ng/mg tissue**: 1.593 ng/mg
+
+Moderate total tau levels suggest the presence of neurofibrillary tangles but do not indicate advanced tau pathology.
+
+**Step 3:** Assess the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 3.746 ng/mg
+
+Phosphorylated tau protein is present, indicating ongoing tau hyperphosphorylation that may precede neurofibrillary tangle formation.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 2.352
+
+A higher pTau/total-tau ratio suggests increased phosphorylated tau compared to total tau, suggesting active tau processing within neurons.
+
+**Step 5:** Examine additional biomarker levels.
+
+- **Abeta immunoreactivity, fraction of area**: 0.06743
+- **AT8 pTau immunoreactivity, fraction of area**: 0.0746
+- **Tau-2 immunoreactivity (FFPE)**: 0.007859
+- **alpha-synuclein immunoreactivity, fraction of area**: 7.208e-05"
+85,309335469,1.0,0,0,0.0,"The Abeta-42 level in Amyloid Burden is lower than others, implying less amyloid buildup. Elevated phospho-tau levels suggest active tau pathology, though the pTau/total-tau ratio remains within normal bounds, indicating mild tau accumulation. Neurodegeneration and atrophy show no notable changes with no increased markers for astrocytes or microglia. Clinical outcome points towards early Alzheimer's disease given these findings."
+92,309335491,0.0,1,1,0.0,"Advanced tau pathology is highly likely given the high Abeta-42 levels, moderate total tau, elevated phospho-tau, and normal synuclein levels. Advanced age and the absence of other known neurodegenerative diseases further support this diagnosis."
+105,326765659,1.0,0,1,1.0,"**Step 1:** Analyze the Abeta-42 levels in the TCx sample.
+
+- **Abeta-42 pg/mg tissue**: 0.1287
+- **Abeta-40 pg/mg tissue**: 0.546
+- **Abeta-42/40 ratio**: 0.2357
+
+This indicates high Abeta-42 levels but low Abeta-40 levels, suggesting potential accumulation of beta-amyloid plaques without significant neurofibrillary tangles yet.
+
+**Step 2:** Evaluate the total tau level.
+
+- **Total tau ng/mg tissue**: 1.454
+
+A moderate total tau level suggests ongoing neurodegenerative processes but not severe tauopathy.
+
+**Step 3:** Assess the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 0.3162
+
+Moderate phospho-tau levels indicate active neurofibrillary tangle formation, consistent with mild tau pathology.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.2175
+
+The ratio is slightly elevated, indicating some degree of hyperphosphorylated tau, which may be associated with more advanced stages of tau pathology.
+
+**Step 5:** Examine other biomarkers.
+
+- **Abeta immunoreactivity, fraction of area**: 0.003251
+- **AT8 pTau immunoreactivity, fraction of area**: 0.002926
+- **Tau-2 immunoreactivity (FFPE), fraction of area**: 0.001403
+- **alpha-synuclein immunoreactivity, fraction of area**: 1.152e-04
+- **GFAP astrogliosis, fraction of"
+135,326765662,1.0,1,1,0.0,"Given the high Abeta-42 levels, low total tau content, presence of phospho-tau, and elevated pTau/total-tau ratio, the patient's hippocampus is likely showing advanced tau pathology."
+139,309335465,0.0,1,1,0.0,"Given the high Abeta-42 levels, the low Abeta-40 levels, the elevated phospho-tau, and the lack of other AD-specific findings, the patient likely exhibits advanced tau pathology."
+145,309335497,1.0,1,1,0.0,"**Step 1:** Examine the Abeta-42 levels in the TCx sample.
+
+- **Abeta-42 pg/mg tissue**: 558.7 pg/mg
+- **Abeta-40 pg/mg tissue**: 1.329 pg/mg
+- **Abeta-42/40 ratio**: 420.5
+
+This high Abeta-42 level points to substantial accumulation of beta-amyloid plaques, potentially leading to increased neurofibrillary tangles due to oxidative stress and inflammation.
+
+**Step 2:** Evaluate the total tau content.
+
+- **Total tau ng/mg tissue**: 1.489 ng/mg
+
+A higher total tau concentration confirms the presence of neurofibrillary tangles, consistent with the presence of beta-amyloid plaques.
+
+**Step 3:** Assess the phospho-tau levels.
+
+- **Phospho-tau ng/mg tissue**: 0.5229 ng/mg
+
+The elevated phospho-tau level substantiates the presence of neurofibrillary tangles, suggesting ongoing tauopathy.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.3512
+
+An elevated pTau/total-tau ratio indicates active tau phosphorylation, indicative of advanced tau pathology.
+
+**Conclusion:** Based on the high Abeta-42, total tau, phospho-tau, and pTau/total-tau ratios, as well as the evidence of advanced tau pathology, we conclude that the donor exhibits **ADVANCED tau pathology**."
+168,326765671,0.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the HIP sample.
+
+- **Abeta-42 pg/mg tissue**: 0.2721
+- **Abeta-40 pg/mg tissue**: 0.8426
+- **Abeta-42/40 ratio**: 0.3229
+
+This shows elevated Abeta-42 levels while maintaining moderate Abeta-40 levels, indicating a mixture of beta-amyloid plaques and neurofibrillary tangles.
+
+**Step 2:** Evaluate the total tau level.
+
+- **Total tau ng/mg tissue**: 1.412
+
+A relatively low total tau level suggests minimal neurofibrillary tangle accumulation compared to other samples.
+
+**Step 3:** Assess the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 3.656
+
+High phospho-tau levels suggest significant neurofibrillary tangle pathology.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 2.589
+
+The high pTau/total-tau ratio confirms the presence of extensive neurofibrillary tangles.
+
+**Step 5:** Examine the overall pattern of tau pathology.
+
+Based on the high phospho-tau levels and the low total tau levels, along with the high pTau/total-tau ratio, it can be concluded that there is considerable neurofibrillary tangle pathology across the entire hippocampus."
+192,309335458,0.0,1,1,0.0,"Given the high Abeta-42 levels, elevated total tau, phosphorylated tau, active tau pathology, and evidence of astrocytic and microglial activation, the patient likely exhibits advanced tau pathology."
+204,309335450,0.0,1,1,0.0,"High Abeta-42 levels (6.778 pg/mg tissue) suggest significant amyloid accumulation, leading to increased tau pathology through cross-talk between beta-amyloid and tau. Low total tau (0.9823 ng/mg tissue) indicates minimal neurofibrillary tangles, while elevated phospho-tau (0.9904 ng/mg tissue) and an elevated pTau/total-tau ratio (1.008) point toward active tau phosphorylation and advanced tau pathology. The overall pattern of tau pathology is characterized by high Abeta-42 levels, low total tau, and elevated pTau/total-tau ratio, supporting advanced tau pathology."
+212,326765653,0.0,1,0,1.0,"**Step 1:** Measure the Abeta-42 concentration in the hippocampus (HIP). The result is 0.2539 pg/mg tissue.
+
+**Interpretation:** Low Abeta-42 levels imply fewer beta-amyloid plaques, potentially reducing neurodegeneration.
+
+**Step 2:** Determine the Abeta-40 concentration. It is 0.7181 pg/mg tissue.
+
+**Interpretation:** High Abeta-40 levels correspond to more neurofibrillary tangles, suggesting advanced tau pathology.
+
+**Step 3:** Compute the Abeta-42/40 ratio. It equals 0.3536.
+
+**Interpretation:** This ratio shows a moderate amount of tau pathology compared to Abeta-42, aligning with mild-to-moderate Alzheimer's symptoms.
+
+**Step 4:** Assess the total tau content. It amounts to 1.423 ng/mg tissue.
+
+**Interpretation:** A moderate total tau load signifies ongoing neurodegeneration without severe cognitive impairment.
+
+**Step 5:** Evaluate the phospho-tau content. It is 0.8938 ng/mg tissue.
+
+**Interpretation:** Increased phospho-tau correlates with numerous neurofibrillary tangles, substantiating substantial tau pathology.
+
+**Step 6:** Investigate the pTau/total-tau ratio. It is 0.6281.
+
+**Interpretation:** This ratio reflects an equilibrium between phosphorylated and unphosphorylated tau, indicating active tau metabolism.
+
+**Step 7:** Examine the Abeta immunoreactivity. It represents 0.001328 fraction of area.
+
+**Interpretation:** Minimal Abeta immunoreactivity implies few neurofibrillary tangles, suggesting no significant tau pathology.
+
+**Step 8:** Observe the AT8 pTau immunoreactivity. It"
+215,326765656,1.0,1,1,0.0,"### Step 1: Analyze Abeta-42 Levels in the HIP Sample.
+- **Abeta-42 pg/mg tissue**: 461.9 pg/mg
+- **Abeta-40 pg/mg tissue**: 1.35 pg/mg
+- **Abeta-42/40 Ratio**: 342.1
+
+High Abeta-42 levels suggest significant accumulation of beta-amyloid plaques, indicative of Alzheimer's disease (AD).
+
+### Step 2: Assess the Abeta-42/40 Ratio.
+- The ratio shows a higher concentration of Abeta-42 relative to Abeta-40, indicating diffuse plaque formation rather than dense plaques typical of AD.
+
+### Step 3: Evaluate Total Tau Content.
+- **Total tau ng/mg tissue**: 1.406 ng/mg
+- **Phospho-tau ng/mg tissue**: 4.713 ng/mg
+- **pTau/total-tau Ratio**: 3.352
+
+Elevated total tau and phospho-tau along with an increased pTau/total-tau ratio suggest active neurodegeneration and increased tau hyperphosphorylation.
+
+### Step 4: Consider Other Biomarkers.
+- **AT8 pTau Immunoreactivity**: 0.05692
+- **Tau-2 Immunoreactivity**: 0.01144
+- **Alpha-Synuclein Immunoreactivity**: 7.129e-05
+- **GFAP Astrogliosis**: 0.04818
+- **IBA1 Microgliosis**: 0.04965
+
+Markers show ongoing inflammation and gliosis without strong evidence of advanced tau pathology."
+279,326765656,1.0,0,1,1.0,"**Step 1:** Analyze the Abeta-42 levels in the TCx sample.
+
+- **Abeta-42 pg/mg tissue**: 457.3 pg/mg
+- **Abeta-40 pg/mg tissue**: 2.166 pg/mg
+- **Abeta-42/40 ratio**: 211.1
+
+High Abeta-42 levels indicate significant accumulation of beta-amyloid plaques, leading to increased neurofibrillary tangles due to oxidative stress and inflammation.
+
+**Step 2:** Examine the total tau content.
+
+- **Total tau ng/mg tissue**: 1.468 ng/mg
+
+Moderate increases in total tau suggest ongoing synaptic dysfunction and neuronal loss.
+
+**Step 3:** Assess the phosphorylated tau levels.
+
+- **Phospho-tau ng/mg tissue**: 1.356 ng/mg
+- **pTau/total-tau ratio**: 0.9239
+
+Elevated pTau/total-tau ratio indicates active neurodegeneration involving both hyperphosphorylated tau and total tau.
+
+**Step 4:** Evaluate other biomarkers.
+
+- **Abeta immunoreactivity, fraction of area**: 0.0551
+- **AT8 pTau immunoreactivity, fraction of area**: 0.009599
+- **Tau-2 immunoreactivity (FFPE), fraction of area**: 0.006103
+- **alpha-synuclein immunoreactivity, fraction of area**: 9.256e-05
+- **GFAP astrogliosis, fraction of area**: 0.04165
+- **IBA1 microgliosis, fraction of area**: 0.05072
+- **alpha-synuclein (pg"
+280,309335455,0.0,0,0,0.0,"Given the low levels of total tau and phospho-tau, combined with moderate Abeta-42 levels without strong signs of advanced tau pathology, the most probable classification is **EARLY tau pathology**, with confidence at 80%."
+286,467056408,1.0,1,1,0.0,"Given the high Abeta-42 levels, the substantial increase in total tau, the presence of phosphorylated tau, and the elevated pTau/total-tau ratio, this donor likely shows advanced tau pathology throughout the brain."
+298,309335439,0.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the TCx sample.
+
+- **Abeta-42 pg/mg tissue**: 2.051
+- **Abeta-40 pg/mg tissue**: 0.9464
+- **Abeta-42/40 ratio**: 2.167
+
+This shows high Abeta-42 levels but low Abeta-40 levels, indicating potential accumulation of beta-amyloid plaques without significant neurofibrillary tangles.
+
+**Step 2:** Evaluate the total tau level.
+
+- **Total tau ng/mg tissue**: 1.369
+
+A moderate total tau level suggests ongoing neurodegeneration but does not indicate severe tauopathy.
+
+**Step 3:** Assess the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 1.14
+
+The phospho-tau level is lower than expected, implying less phosphorylated tau protein, which may mean fewer neurofibrillary tangles.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.833
+
+An elevated pTau/total-tau ratio suggests some neurofibrillary tangle formation, consistent with mild tau pathology.
+
+**Step 5:** Examine the Abeta immunoreactivity.
+
+- **Abeta immunoreactivity fraction of area**: 0.03135
+
+High Abeta immunoreactivity points to active plaque deposition, supporting the presence of beta-amyloid plaques.
+
+**Step 6:** Look at the AT8 pTau immunoreactivity.
+
+- **AT8 pTau immunoreactivity fraction of area**: 2.115e-04
+
+Low AT8 pTau immunoreactivity implies minimal phosphorylated tau, consistent with the overall low phospho-tau level.
+
+**"
+300,309335469,1.0,1,1,0.0,"Given the high Abeta-42 levels, elevated total tau, and active phosphorylation, as well as evidence of neurofibrillary tangles through AT8 pTau and Tau-2 immunoreactivity, the patient is diagnosed with advanced tau pathology."
+309,309335474,0.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the PCx sample.
+
+- **Abeta-42 pg/mg tissue**: 71.99 pg/mg
+- **Abeta-40 pg/mg tissue**: 0.9762 pg/mg
+- **Abeta-42/40 ratio**: 73.75
+
+This high Abeta-42 level suggests significant accumulation of beta-amyloid plaques, leading to increased neurofibrillary tangles due to oxidative stress and inflammation.
+
+**Step 2:** Evaluate the Abeta-42/40 ratio.
+
+- **Abeta-42/40 ratio**: 73.75
+
+A higher ratio indicates more abundant beta-amyloid compared to its precursor peptide, suggesting ongoing plaque formation and potential disruption of normal protein metabolism.
+
+**Step 3:** Assess the total tau content.
+
+- **Total tau ng/mg tissue**: 1.024 ng/mg
+
+Elevated total tau content may indicate active neurodegeneration, potentially linked to tauopathy progression.
+
+**Step 4:** Consider the phospho-tau content.
+
+- **Phospho-tau ng/mg tissue**: 0.3008 ng/mg
+
+High phospho-tau levels suggest ongoing neuronal damage and possible synaptic dysfunction.
+
+**Step 5:** Examine the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.2938
+
+An elevated pTau/total-tau ratio points towards increased phosphorylated tau, indicating ongoing neurofibrillary tangle formation.
+
+**Step 6:** Review other biomarkers.
+
+- **Abeta immunoreactivity, fraction of area**: 0.00256
+- **AT8 pTau immunoreactivity, fraction of area**: 8.157e-05
+"
+318,326765674,1.0,0,1,1.0,"**Step 1:** Analyze the Abeta-42 levels in the HIP sample.
+
+- **Abeta-42 pg/mg tissue**: 303.3 pg/mg
+- **Abeta-40 pg/mg tissue**: 0.7108 pg/mg
+- **Abeta-42/40 ratio**: 426.7
+
+High Abeta-42 levels indicate significant accumulation of beta-amyloid plaques, leading to increased neurofibrillary tangles due to oxidative stress and inflammation.
+
+**Step 2:** Assess the total tau content.
+
+- **Total tau ng/mg tissue**: 1.251 ng/mg
+- **Phospho-tau ng/mg tissue**: 3.231 ng/mg
+- **pTau/total-tau ratio**: 2.583
+
+Elevated phospho-tau suggests ongoing tau hyperphosphorylation, consistent with chronic tauopathy.
+
+**Step 3:** Evaluate the Abeta immunoreactivity.
+
+- **Fraction of area**: 0.004792
+
+Low Abeta immunoreactivity indicates minimal plaque deposition, suggesting some underlying pathology.
+
+**Step 4:** Consider the other biomarkers.
+
+- **AT8 pTau immunoreactivity**: 0.05566
+- **Tau-2 immunoreactivity**: 0.004904
+- **Alpha-synuclein immunoreactivity**: 2.448e-05
+- **GFAP astrogliosis**: 0.06636
+- **IBA1 microgliosis**: 0.05182
+
+No evidence of gliosis or microgliosis, indicating less severe neuroinflammation compared to more advanced stages.
+
+**Conclusion:** Moderate-to-high tau pathology is indicated by the combination of high Abeta"
+351,326765677,1.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the PCx sample.
+
+- **Abeta-42 pg/mg tissue**: 588.3 pg/mg
+- **Abeta-40 pg/mg tissue**: 5.368 pg/mg
+- **Abeta-42/40 ratio**: 109.6
+
+This high Abeta-42 level suggests significant accumulation of beta-amyloid plaques, characteristic of Alzheimer's disease (AD).
+
+**Step 2:** Examine the Abeta-42/40 ratio.
+
+- The ratio indicates a higher proportion of Abeta-42 compared to Abeta-40, suggesting more diffuse plaque deposition rather than localized deposits typical of AD.
+
+**Step 3:** Assess the total tau content.
+
+- **Total tau ng/mg tissue**: 1.118 ng/mg
+- **Phospho-tau ng/mg tissue**: 1.335 ng/mg
+- **pTau/total-tau ratio**: 1.194
+
+The elevated total tau and phospho-tau levels suggest increased neurofibrillary tangles, consistent with tauopathy progression.
+
+**Step 4:** Evaluate the Abeta immunoreactivity.
+
+- **Fraction of area**: 0.01263
+
+A low Abeta immunoreactivity suggests minimal neurofibrillary tangle formation, indicating less severe tau pathology.
+
+**Step 5:** Consider other biomarkers.
+
+- **AT8 pTau immunoreactivity**: 0.01863
+- **Tau-2 immunoreactivity**: 0.007028
+- **alpha-synuclein immunoreactivity**: 8.820e-04
+- **GFAP astrogliosis**: 0.0438
+- **IBA1 micro"
+363,309335491,0.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the sample.
+
+- **Abeta-42 pg/mg tissue**: 360.4 pg/mg
+- **Abeta-40 pg/mg tissue**: 0.5422 pg/mg
+- **Abeta-42/40 ratio**: 664.7
+
+This high Abeta-42 level suggests significant accumulation of beta-amyloid plaques, typical of Alzheimer's disease (AD).
+
+**Step 2:** Assess the Abeta-42/40 ratio.
+
+- **Abeta-42/40 ratio**: 664.7
+
+A high ratio indicates more abundant beta-amyloid deposition relative to its precursor peptide, supporting AD pathology.
+
+**Step 3:** Evaluate the total tau content.
+
+- **Total tau ng/mg tissue**: 0.9546 ng/mg
+
+The presence of total tau, along with other markers such as phosphorylated tau (phospho-tau), confirms neurofibrillary tau pathology.
+
+**Step 4:** Consider the phospho-tau levels.
+
+- **Phospho-tau ng/mg tissue**: 1.841 ng/mg
+
+High phospho-tau levels further support neurofibrillary tau pathology, consistent with AD progression.
+
+**Step 5:** Examine the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 1.928
+
+An elevated pTau/total-tau ratio indicates increased phosphorylation of tau, another hallmark of AD.
+
+**Step 6:** Review the overall picture.
+
+Given the high Abeta-42 levels, the high Abeta-42/40 ratio, the presence of total tau and phospho-tau, and the elevated pTau/total-tau ratio, we can confidently conclude that this donor has advanced tau"
+370,326765668,0.0,1,1,0.0,"### Step 1: Analyze Abeta-42 Levels in the HIP Sample.
+- **Abeta-42 pg/mg tissue**: 457.4 pg/mg
+- **Abeta-40 pg/mg tissue**: 5.171 pg/mg
+- **Abeta-42/40 Ratio**: 88.46
+
+High Abeta-42 levels suggest significant accumulation of beta-amyloid plaques, indicative of Alzheimer's disease (AD).
+
+### Step 2: Assess the Abeta-42/40 Ratio.
+- The ratio shows a higher concentration of Abeta-42 relative to Abeta-40, indicating diffuse plaque formation rather than dense plaques typical of AD.
+
+### Step 3: Evaluate Total Tau Content.
+- **Total tau ng/mg tissue**: 1.348 ng/mg
+- **Phospho-tau ng/mg tissue**: 3.596 ng/mg
+- **pTau/total-tau Ratio**: 2.667
+
+Elevated total tau and phospho-tau levels suggest active neurodegeneration and increased tau hyperphosphorylation.
+
+### Step 4: Consider Other Biomarkers.
+- **AT8 pTau Immunoreactivity**: 0.02592
+- **Tau-2 Immunoreactivity**: 0.006376
+- **Alpha-Synuclein Immunoreactivity**: 1.218e-04
+- **GFAP Astrogliosis**: 0.04102
+- **IBA1 Microgliosis**: 0.08226
+
+Markers show ongoing inflammation and gliosis without strong evidence of advanced tau pathology."
+372,326765653,0.0,0,0,0.0,"Given the high phosphorylation of tau but minimal amyloid and no synucleinopathy, this patient likely has early tau pathology rather than advanced tau pathology. Early tau | Confidence: 85"
+375,309335458,0.0,1,1,0.0,"### Step 1: Analyze Abeta-42 Levels in the PCx Sample.
+- **Abeta-42 pg/mg tissue**: 205.9 pg/mg
+- **Abeta-40 pg/mg tissue**: 0.4442 pg/mg
+- **Abeta-42/40 Ratio**: 463.4
+
+High Abeta-42 levels suggest significant accumulation of beta-amyloid plaques, leading to increased neurofibrillary tangles due to oxidative stress and inflammation.
+
+### Step 2: Evaluate Total Tau Content.
+- **Total tau ng/mg tissue**: 1.187 ng/mg
+
+Higher total tau levels confirm the presence of neurofibrillary tangles, consistent with beta-amyloid plaques.
+
+### Step 3: Assess Phospho-Tau Concentration.
+- **Phospho-tau ng/mg tissue**: 0.7087 ng/mg
+
+Elevated phospho-tau levels support the presence of neurofibrillary tangles, indicating ongoing tauopathy.
+
+### Step 4: Consider pTau/Total-Tau Ratio.
+- **pTau/total-tau ratio**: 0.597
+
+An elevated pTau/total-tau ratio suggests active tau phosphorylation, characteristic of advanced tau pathology.
+
+### Conclusion:
+Given the high Abeta-42, total tau, phospho-tau, and pTau/total-tau ratios, as well as the advanced tau pathology indicated by these measurements, we conclude that the donor has **ADVANCED tau pathology**."
+8,309335479,1.0,1,1,0.0,"**Step 1:** Analyze the levels of Abeta-42 in the sample.
+
+- **Abeta-42 pg/mg tissue**: 420.8 pg/mg
+- **Abeta-40 pg/mg tissue**: 458.7 pg/mg
+- **Abeta-42/40 ratio**: 0.9172
+
+This shows elevated Abeta-42 levels, potentially linked to both neurofibrillary tangles and other types of neurodegeneration.
+
+**Step 2:** Examine the total tau concentration.
+
+- **Total tau ng/mg tissue**: 1.109 ng/mg
+
+A moderate total tau level points towards ongoing tau pathology without indicating severe progression.
+
+**Step 3:** Investigate the phospho-tau content.
+
+- **Phospho-tau ng/mg tissue**: 1.918 ng/mg
+
+High phospho-tau levels suggest active tau phosphorylation, indicative of advanced tau pathology.
+
+**Step 4:** Assess the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 1.729
+
+The ratio exceeding normal values implies some degree of tau hyperphosphorylation, corroborating advanced tau pathology.
+
+**Step 5:** Evaluate the Abeta immunoreactivity.
+
+- **Abeta immunoreactivity fraction of area**: 0.05602
+
+Moderate Abeta immunoreactivity indicates mild neurofibrillary tangle formation, consistent with advanced tau pathology.
+
+**Step 6:** Examine the AT8 pTau immunoreactivity.
+
+- **AT8 pTau immunoreactivity fraction of area**: 0.06945
+
+Significant AT8 pTau immunoreactivity signifies substantial phosphorylated tau deposition, strongly supporting advanced tau pathology.
+
+**Step 7:** Review the Tau-2 immunoreactivity.
+
+- **Tau-2"
+17,326765683,0.0,1,1,0.0,"**Step 1:** Analyze the levels of Abeta-42 in the sample.
+
+- **Abeta-42 pg/mg tissue**: 298.4 pg/mg
+- **Abeta-40 pg/mg tissue**: 0.8522 pg/mg
+- **Abeta-42/40 ratio**: 350.2
+
+This shows elevated Abeta-42 levels, potentially linked to both neurofibrillary tangles and other types of neurodegeneration.
+
+**Step 2:** Evaluate the total tau concentration.
+
+- **Total tau ng/mg tissue**: 1.367 ng/mg
+
+An increase in total tau points towards ongoing neurodegenerative changes.
+
+**Step 3:** Assess the phospho-tau content.
+
+- **Phospho-tau ng/mg tissue**: 2.797 ng/mg
+
+High phospho-tau levels indicate active tau phosphorylation, indicative of advanced tau pathology.
+
+**Step 4:** Investigate the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 2.046
+
+The ratio exceeding one signifies significant tau hyperphosphorylation, reinforcing advanced tau pathology.
+
+**Step 5:** Examine the Abeta immunoreactivity.
+
+- **Fraction of area**: 0.0107
+
+Minimal Abeta immunoreactivity suggests little plaque formation, typically seen earlier in disease progression.
+
+**Step 6:** Assess the AT8 pTau immunoreactivity.
+
+- **Fraction of area**: 0.01593
+
+Moderate AT8 pTau immunoreactivity corresponds with high phospho-tau levels, indicating active tau phosphorylation.
+
+**Step 7:** Evaluate the Tau-2 immunoreactivity.
+
+- **Fraction of area**: 0.003103
+
+Very low Tau-2 immunoreactivity implies few neuro"
+47,309335468,1.0,1,1,0.0,"The elevated Abeta-42 level (219.5 pg/mg) and phospho-tau level (0.5702 ng/mg) suggest a high amyloid burden and active tau phosphorylation, respectively. These findings indicate significant neurodegeneration and atrophy, leading to an increased likelihood of advanced tau pathology."
+56,309335445,1.0,1,1,0.0,"Advanced tau pathology is indicated by high Abeta-42/pgm, elevated phospho-tau/ngm, and significant alpha-synuclein/pgm. Gliosis and microgliosis are present with moderate values."
+98,309335445,1.0,0,0,0.0,"Given the high Abeta-42 levels, moderate total tau, and low pTau/total-tau ratio, the patient likely falls into the category of early-stage AD characterized by mild-to-moderate neurofibrillary tau pathology."
+116,309335479,1.0,1,1,0.0,"Given the high Abeta-42 and total tau levels, along with the presence of phosphorylated tau, we can confidently conclude that this donor has advanced tau pathology."
+117,309335492,1.0,1,1,0.0,"High Abeta-42 levels, low total tau, elevated phospho-tau, and an elevated pTau/total-tau ratio indicate advanced tau pathology."
+131,326765678,1.0,1,1,0.0,"The elevated Abeta-42 level at 516.1 pg/mg tissue indicates an increased risk for Alzheimer's disease. High phospho-tau levels at 2.994 ng/mg tissue suggest advanced tau pathology, correlating with the elevated Abeta levels. Neurodegeneration and astrocyte activation, as evidenced by GFAP astrogliosis, further support these findings. Therefore, the likelihood of advanced tau pathology is high given the combined evidence of high Abeta and tau levels and signs of neurodegeneration."
+144,309335492,1.0,1,1,0.0,"The analysis indicates that the patient exhibits significant accumulation of beta-amyloid plaques (Abeta-42) and neurofibrillary tangles (phospho-tau), suggesting advanced stages of tauopathy. The observed increase in GFAP astrogliosis and IBA1 microgliosis further supports this diagnosis, indicating ongoing inflammation and reactive gliosis typical of Alzheimer's disease."
+169,309335487,0.0,1,1,0.0,"**Step 1:** Investigate the concentration of Abeta-42 in the sample.
+
+- **Abeta-42 pg/mg tissue**: 452.8 pg/mg
+- **Abeta-40 pg/mg tissue**: 29.03 pg/mg
+- **Abeta-42/40 ratio**: 15.59
+
+This high Abeta-42 level points to substantial accumulation of beta-amyloid plaques, typical of Alzheimer's disease (AD).
+
+**Step 2:** Assess the Abeta-42/40 ratio.
+
+- **Abeta-42/40 ratio**: 15.59
+
+A higher ratio implies greater beta-amyloid deposition, reinforcing the AD diagnosis.
+
+**Step 3:** Measure the total tau content.
+
+- **Total tau ng/mg tissue**: 1.078 ng/mg
+
+The presence of elevated total tau supports the development of neurofibrillary tangles, consistent with tauopathy progression.
+
+**Step 4:** Evaluate the phospho-tau content.
+
+- **Phospho-tau ng/mg tissue**: 1.154 ng/mg
+
+High phospho-tau levels suggest ongoing tau phosphorylation, another feature of AD.
+
+**Step 5:** Examine the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 1.07
+
+An elevated pTau/total-tau ratio indicates active tau hyperphosphorylation, indicating progressive tau pathology.
+
+**Step 6:** Review additional biomarkers.
+
+- **Abeta immunoreactivity, fraction of area**: 0.04635
+- **AT8 pTau immunoreactivity, fraction of area**: 0.00175
+- **Tau-2 immunoreactivity (FFPE), fraction of area**: 0.00306"
+176,309335487,0.0,1,1,0.0,"The analysis reveals that Amyloid-β (Abeta-42) levels are markedly elevated at 363.7 pg/mg tissue, indicating a substantial amyloid burden. Phosphorylated Tau (p-Tau) levels are also elevated at 0.7714 ng/mg tissue, suggesting significant tau accumulation. Both findings indicate severe neurodegeneration and potential atrophy. Advanced tau pathology, characterized by the presence of both phospho-tau and pTau/total-tau ratios, is highly probable given these results."
+177,309335495,0.0,0,0,0.0,"**Step 1:** Analyze the Abeta-42 levels in the sample.
+
+- **Abeta-42 pg/mg tissue**: 0.2993
+- **Abeta-40 pg/mg tissue**: 0.7564
+- **Abeta-42/40 ratio**: 0.3956
+
+This shows lower Abeta-42 levels than other samples, implying less severe Alzheimer's disease pathology.
+
+**Step 2:** Assess the total tau level.
+
+- **Total tau ng/mg tissue**: 1.457
+
+A moderate total tau level suggests some neurofibrillary tau pathology but does not indicate excessive levels.
+
+**Step 3:** Evaluate the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 1.142
+
+Moderate phospho-tau levels indicate ongoing tau phosphorylation, consistent with mild-to-moderate tau pathology.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.7835
+
+The ratio is slightly elevated, suggesting more advanced tau pathology.
+
+**Step 5:** Examine the Abeta immunoreactivity.
+
+- **Fraction of area**: 0.003621
+
+Low Abeta immunoreactivity indicates minimal beta-amyloid deposition, supporting a milder form of Alzheimer's disease.
+
+**Step 6:** Investigate the AT8 pTau immunoreactivity.
+
+- **Fraction of area**: 0.003494
+
+AT8 pTau positivity is also low, confirming minimal tau phosphorylation.
+
+**Step 7:** Review the Tau-2 immunoreactivity.
+
+- **Fraction of area**: 9.416e-04
+
+Very low Tau-2 immunoreactivity suggests minimal neurofibrillary tangles, reinforcing the low severity of"
+181,326765687,0.0,1,1,0.0,"The analysis reveals that Amyloid Burden (Abeta-42) is markedly elevated at 145.5 pg/mg tissue, while Tau Pathology shows a high phospho-tau level of 6.443 ng/mg tissue with an elevated pTau/total-tau ratio of 5.243. Neurodegeneration/Atrophy measurements indicate a low GFAP astrogliosis score of 0.06874 but an elevated IBA1 microgliosis score of 0.1136. These findings suggest advanced tau pathology rather than early tau pathology in the patient."
+195,309335445,1.0,1,1,0.0,"The patient has a high Abeta-42 level (343.8 pg/mg), indicating an increased risk for Alzheimer's disease. Phospho-tau levels are also elevated at 5.368 ng/mg, with a pTau/total-tau ratio of 3.835 suggesting severe tau pathology. Significant astrocyte and microglia activation (GFAP and IBA1 respectively) indicate ongoing neuroinflammation and potential neuronal damage. These findings support advanced tau pathology and symptomatic progression."
+196,326765678,1.0,1,1,0.0,"The analysis reveals that Amyloid Burden (Abeta-42) levels in the TCx sample are exceptionally high at 457.5 pg/mg tissue, suggesting substantial amyloid deposition. Similarly, Total Tau content is markedly elevated at 1.222 ng/mg tissue, indicating significant accumulation of phosphorylated tau protein. Furthermore, the pTau/Total-Tau ratio of 2.183 corroborates the presence of advanced tau pathology. Neurodegeneration and atrophy are evident across all examined brain regions due to these high levels. Consequently, the likelihood of advanced tau pathology is extremely high based on the combined evidence of high amyloid and tau burdens and signs of extensive neurodegeneration."
+203,326765650,1.0,1,1,0.0,"Given the high Abeta-42 levels, the low Abeta-42/40 ratio, elevated total tau, and active neurofibrillary degeneration indicated by high phospho-tau levels, the patient likely has advanced tau pathology."
+224,309335481,1.0,1,1,0.0,"The analysis reveals that Amyloid-β (Abeta-42) levels are exceptionally high at 218 pg/mg tissue, far exceeding those observed in other samples. This finding points to an increased amyloid burden.
+
+Additionally, the total Tau level is markedly elevated at 1.733 ng/mg tissue, surpassing normal ranges. Phosphorylated Tau levels are also elevated at 0.6946 ng/mg tissue, suggesting active Tau phosphorylation.
+
+These elevated levels indicate severe neurodegeneration and atrophy. Both total Tau and phosphorylated Tau presence strongly suggest significant neuronal loss and impaired synapses.
+
+Given the high levels of both amyloid and tau, coupled with observable signs of neurodegeneration, the probability of advanced Tau pathology is high.
+
+Consequently, based on these observations, the donor is **likely to have ADVANCED tau pathology**."
+229,309335496,1.0,1,0,1.0,"The patient's brain region analyzed was PCx. The Abeta-42/pgm measurement was not conducted, meaning there is no data available regarding beta-amyloid accumulation within this sample. Similarly, the Abeta-40/pgm measurement was not performed, implying that there are no details concerning beta-amyloid levels. Additionally, the Abeta-42/40 ratio was not assessed, hindering an evaluation of the relative abundance of these peptides. Furthermore, the total tau/ngm measurement was not taken, precluding an analysis of overall protein load. The phospho-tau/ngm measurement was also unrecorded, rendering it impossible to ascertain the phosphorylation status. Lastly, the pTau/total-tau ratio was not determined, thereby failing to provide insights into the tau-to-total protein ratio. The Abeta immunoreactivity, which represents the fraction of area with positive reaction, was recorded as 0.02009, indicating significant Abeta deposition but lacking sufficient information for a comprehensive distribution analysis. The AT8 pTau immunoreactivity, similarly representing the fraction of area with positive reaction, showed 0.007276, suggesting some presence of phosphorylated tau but without detailed spatial distribution. The Tau-2 immunoreactivity (FFPE), which provides limited information on tau aggregation patterns, had a value of 0.003705. Alpha-synuclein immunoreactivity, represented by the fraction of area with positive reaction, was found to be 8.995e-05, indicating minimal positivity for synuclein. Gfap astrogliosis, quantified as a fraction of area, was noted at 0.01983, reflecting mild gliosis. Iba1 microgliosis, another measure of gliosis, was observed at 0.05755, signifying moderate microgliosis."
+247,309335489,0.0,1,1,0.0,"**Step 1:** Examine the Abeta-42 concentration in the sample.
+
+- **Abeta-42 pg/mg tissue**: 0.2582
+- **Abeta-40 pg/mg tissue**: 0.2165
+- **Abeta-42/40 ratio**: 1.193
+
+This shows that there are low Abeta-42 levels relative to other samples, indicating milder Alzheimer's disease pathology.
+
+**Step 2:** Evaluate the total tau content.
+
+- **Total tau ng/mg tissue**: 1.03
+- **Phospho-tau ng/mg tissue**: 0.9936
+- **pTau/total-tau ratio**: 0.9644
+
+The elevated total tau and phospho-tau levels indicate substantial neurofibrillary tau pathology but still below those found in some other samples.
+
+**Step 3:** Assess the Abeta immunoreactivity.
+
+- **Fraction of area**: 3.249e-04
+
+The low Abeta immunoreactivity implies minimal beta-amyloid deposition, aligning with mild cognitive impairment rather than full Alzheimer's disease.
+
+**Step 4:** Conclude on the overall tau pathology pattern.
+
+- Combining low Abeta-42, moderate total tau, and higher phospho-tau suggests an advanced stage of tauopathy. This condition may be associated with the coexistence of hyperphosphorylated tau and neurofibrillary tangles."
+263,309335487,0.0,1,1,0.0,"Given the high Abeta-42 levels, elevated total tau and phospho-tau, and signs of neurodegeneration and astrocyte activation, the patient is most likely in an advanced stage of tau pathology."
+281,309335495,0.0,1,1,0.0,"The high Abeta-42 and total tau levels in the TCx sample indicate a greater risk for Alzheimer's disease-related amyloid deposition and advanced tau pathology. Neurodegeneration and atrophy are evident based on these findings, suggesting that the patient may exhibit symptoms typical of advanced tau pathology."
+311,326765678,1.0,1,1,0.0,"The elevated Abeta-42 level (491.6 pg/mg) and the high phospho-tau level (1.598 ng/mg) indicate significant Alzheimer's disease-related changes, including advanced tau pathology characterized by neurodegeneration and atrophy."
+334,309335466,1.0,1,1,0.0,High Abeta-42 levels (358.5 pg/mg) and elevated total tau and phospho-tau contents (0.7241 ng/mg and 4.286 ng/mg respectively) suggest significant neurodegeneration and potential cognitive decline due to Alzheimer's disease.
+337,326765687,0.0,1,1,0.0,"### Step 1: Analyze Abeta-42 Levels
+
+- **Abeta-42 pg/mg tissue**: 463.8 pg/mg
+- **Abeta-40 pg/mg tissue**: 850.5 pg/mg
+- **Abeta-42/40 Ratio**: 0.5454
+
+The high Abeta-42 level points towards significant accumulation of beta-amyloid plaques, typical of Alzheimer’s disease (AD).
+
+### Step 2: Evaluate Abeta-42/40 Ratio
+
+- **Abeta-42/40 Ratio**: 0.5454
+
+A low ratio implies more abundant Abeta-42 relative to Abeta-40, aligning with AD pathology.
+
+### Step 3: Assess Total Tau Content
+
+- **Total Tau ng/mg tissue**: 1.029 ng/mg
+
+High total tau levels suggest considerable neurofibrillary tau pathology.
+
+### Step 4: Consider Phospho-Tau Content
+
+- **Phospho-Tau ng/mg tissue**: 0.7233 ng/mg
+
+Moderate phospho-tau levels indicate ongoing tau phosphorylation, another feature of AD.
+
+### Step 5: Examine pTau/Total-Tau Ratio
+
+- **pTau/Total-Tau Ratio**: 0.7031
+
+This ratio falls within the normal range yet remains indicative of an elevated tau burden.
+
+### Step 6: Review Other Biomarkers
+
+- **Abeta Immunoreactivity, Fraction of Area**: 0.02029
+- **AT8 pTau Immunoreactivity, Fraction of Area**: 2.176e-04
+- **Tau-2 Immunoreactivity (FFPE), Fraction of Area**: 0.001096
+- **Alpha-Synucle"
+339,309335486,0.0,1,1,0.0,"The patient's brain contains a high amount of Abeta-42 protein and total tau, indicating significant neurodegeneration and atrophy. Advanced tau pathology is strongly supported by these findings."
+362,309335489,0.0,1,1,0.0,"The Abeta-42 level is significantly elevated at 18.69 pg/mg tissue, suggesting a higher amyloid burden. The total tau level is also elevated at 1.076 ng/mg tissue, and the phospho-tau level is elevated at 1.394 ng/mg, indicating active tau phosphorylation. These elevated levels correlate with signs of neurodegeneration and atrophy, supporting the inference that the donor likely has advanced tau pathology rather than early tau pathology."
+1,309335480,0.0,0,0,0.0,"Given the low total tau, phospho-tau, and pTau/total-tau ratios, as well as the lack of significant astrocyte or microglial activation, this patient is categorized as having early tau pathology."
+41,309335470,1.0,0,0,0.0,"Given the high Abeta-42 levels, moderate Abeta-40 levels, elevated phospho-tau, and lack of significant inflammation, the patient likely has **early tau pathology**, with confidence at **85%**."
+49,309335470,1.0,1,1,0.0,"Based on high Abeta-42 levels, moderate total tau increase, presence of phosphorylated tau, and elevated pTau/total-tau ratio, the donor likely has advanced tau pathology."
+50,309335447,1.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the TCx sample.
+
+- **Abeta-42 pg/mg tissue**: 367.4 pg/mg
+- **Abeta-40 pg/mg tissue**: 1.265 pg/mg
+- **Abeta-42/40 ratio**: 290.4
+
+This shows that there are high Abeta-42 levels compared to Abeta-40, indicating increased beta-amyloid deposition, which may relate to more severe tau pathology.
+
+**Step 2:** Evaluate the total tau level.
+
+- **Total tau ng/mg tissue**: 1.332 ng/mg
+
+A higher total tau level suggests the presence of both normal and pathological forms of tau protein.
+
+**Step 3:** Assess the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 0.7036 ng/mg
+
+The presence of phosphorylated tau (phospho-tau) points towards active tau pathology, especially in the context of Alzheimer’s disease.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.5283
+
+An elevated pTau/total-tau ratio confirms the presence of hyperphosphorylated tau, supporting advanced tau pathology.
+
+**Step 5:** Examine other biomarkers.
+
+- **Abeta immunoreactivity, fraction of area**: 0.03283
+- **AT8 pTau immunoreactivity, fraction of area**: 0.001401
+- **Tau-2 immunoreactivity (FFPE), fraction of area**: 0.004301
+- **alpha-synuclein immunoreactivity, fraction of area**: 6.192e-05
+- **"
+70,309335459,0.0,1,0,1.0,"**Step 1:** Analyze the Abeta-42 levels in the FWM sample.
+
+- **Abeta-42 pg/mg tissue**: 0.8261 pg/mg
+- **Abeta-40 pg/mg tissue**: 0.1555 pg/mg
+- **Abeta-42/40 ratio**: 5.313
+
+This shows lower Abeta-42 levels than other samples, implying milder Alzheimer's disease pathology.
+
+**Step 2:** Examine the total tau level.
+
+- **Total tau ng/mg tissue**: 0.7875 ng/mg
+
+Moderate total tau levels suggest some tauopathy without being exceptionally high.
+
+**Step 3:** Evaluate the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 0.2369 ng/mg
+
+The phospho-tau level is modestly low, indicating minimal phosphorylated tau accumulation.
+
+**Step 4:** Assess the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.3009
+
+The ratio is mildly elevated, suggesting slight hyperphosphorylation of tau protein.
+
+**Step 5:** Consider the Abeta immunoreactivity.
+
+- **Fraction of area**: 0.001244
+
+Low Abeta immunoreactivity points to minimal beta-amyloid deposition.
+
+**Step 6:** Review the AT8 pTau immunoreactivity.
+
+- **Fraction of area**: 2.104e-04
+
+Very low AT8 pTau immunoreactivity indicates minimal phosphorylated tau staining.
+
+**Step 7:** Look at the Tau-2 immunoreactivity.
+
+- **Fraction of area**: 0.003624
+
+Tau-2 immunoreactivity is also very low, reinforcing minimal tau pathology.
+
+**Step 8:**"
+81,309335480,0.0,0,0,0.0,"Given the high Abeta-42/40 ratio indicating extensive amyloid deposition, combined with moderate phospho-tau levels and no clear indication of advanced tau pathology, the most likely diagnosis is **EARLY tau pathology**."
+84,309335459,0.0,1,1,0.0,"The analysis reveals that the patient has significant astrocyte and microglial activation, indicating ongoing neuroinflammation. Despite lower levels of Abeta-amyloid and tau pathology compared to other patients, this combination suggests advanced tau pathology due to persistent neuroinflammatory processes."
+88,309335451,1.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in PCx sample.
+
+- **Abeta-42 pg/mg tissue**: 597.3 pg/mg
+- **Abeta-42/40 ratio**: 398.4
+
+This high Abeta-42 level points towards significant accumulation of beta-amyloid plaques, potentially leading to increased neurofibrillary tangles due to oxidative stress and inflammation.
+
+**Step 2:** Evaluate the Abeta-40 levels in PCx sample.
+
+- **Abeta-40 pg/mg tissue**: 1.499 pg/mg
+- **Abeta-42/40 ratio**: 398.4
+
+The low Abeta-40 level implies slower production of new beta-amyloid compared to earlier samples, indicating reduced plaque turnover.
+
+**Step 3:** Assess the Abeta-42/40 ratio in PCx sample.
+
+- **Abeta-42/40 ratio**: 398.4
+
+A high Abeta-42/40 ratio is commonly associated with more severe Alzheimer's disease pathology, characterized by elevated levels of neurofibrillary tangles.
+
+**Step 4:** Examine the total tau levels in PCx sample.
+
+- **Total tau ng/mg tissue**: 1.014 ng/mg
+- **pTau/total-tau ratio**: 0.9118
+
+High total tau levels are indicative of substantial neurofibrillary tangle formation, consistent with the observed high Abeta-42 levels.
+
+**Step 5:** Consider the phospho-tau levels in PCx sample.
+
+- **Phospho-tau ng/mg tissue**: 0.9248 ng/mg
+- **pTau/total-tau ratio**: 0.9118
+
+Moderate phospho"
+99,309335485,0.0,0,0,0.0,"Given the low total tau and phospho-tau levels, as well as the moderate neurofibrillary tangle formation suggested by the pTau/total-tau ratio, there is no clear indication of advanced or early tau pathology based solely on these biomarker values."
+102,326765664,0.0,1,1,0.0,"### Step 1: Analyze Abeta-42 Levels
+
+- **Abeta-42 (pg/mg tissue)**: Not measured.
+  
+This means that the level of Abeta-42 was not determined for the FWM sample, preventing an evaluation of its potential impact on tau accumulation patterns.
+
+### Step 2: Assess Abeta-40 Levels
+
+- **Abeta-40 (pg/mg tissue)**: Not measured.
+  
+Similarly, the measurement of Abeta-40 is missing, making it impossible to assess its contribution to tau pathology.
+
+### Step 3: Evaluate Abeta-42/40 Ratio
+
+- **Abeta-42/40 ratio**: Not measured.
+  
+The ratio between Abeta-42 and Abeta-40 offers crucial information about their relative roles in plaque formation. However, since this ratio is also unmeasured, we cannot infer any specific balance between these two proteins.
+
+### Step 4: Examine Total Tau Levels
+
+- **Total tau (ng/mg tissue)**: Not measured.
+  
+Total tau levels give us an idea of the overall protein load but do not distinguish between phosphorylated and non-phosphorylated forms, nor do they reveal how much of the tau is distributed among neurons.
+
+### Step 5: Consider Phospho-Tau Levels
+
+- **Phospho-tau (ng/mg tissue)**: Not measured.
+  
+Phospho-tau reflects active tau aggregates, indicating the extent of disease progression.
+
+### Step 6: Investigate pTau/Total-Tau Ratio
+
+- **pTau/total-tau ratio**: Not measured.
+  
+This ratio helps differentiate between hyperphosphorylated and non-hyperphosphorylated tau, offering insights into the severity of tau pathology.
+
+### Final Assessment:
+
+With all necessary biomarker data (Abeta-42, Abeta-40, Abeta-42/"
+127,326765663,0.0,0,0,0.0,"Given the low Abeta-42 levels, moderate total tau, and minimal tau pathology indicators, this donor likely falls into the category of early tau pathology rather than advanced tau pathology."
+134,309335483,0.0,0,1,1.0,"**Step 1:** Analyze the Abeta-42 levels in the PCx sample.
+
+- **Abeta-42 pg/mg tissue**: 360.1 pg/mg
+- **Abeta-40 pg/mg tissue**: 2.128 pg/mg
+- **Abeta-42/40 ratio**: 169.2
+
+This suggests elevated Abeta-42 levels while lower Abeta-40 levels, indicating potential buildup of beta-amyloid plaques without significant neurofibrillary tangles.
+
+**Step 2:** Evaluate the total tau level.
+
+- **Total tau ng/mg tissue**: 1.024 ng/mg
+
+Moderate total tau levels suggest ongoing neurodegeneration but do not indicate severe tau pathology.
+
+**Step 3:** Assess the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 1.972 ng/mg
+
+High phospho-tau levels point to active neurofibrillary tangle formation, consistent with progressing tau pathology.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 1.925
+
+The ratio is slightly above normal, indicating mild-to-moderate neurofibrillary tangle pathology rather than severe tauopathy.
+
+**Step 5:** Examine other biomarkers.
+
+- **Abeta immunoreactivity, fraction of area**: 0.03196
+- **AT8 pTau immunoreactivity, fraction of area**: 5.331e-05
+- **Tau-2 immunoreactivity (FFPE), fraction of area**: 0.002374
+- **alpha-synuclein immunoreactivity, fraction of area**: 3.313e-05
+- **GFAP astrogli"
+157,326765663,0.0,1,0,1.0,"### Step 1: Analyze Abeta-42 Levels in TCx Sample.
+- **Abeta-42 pg/mg tissue**: 0.147
+- **Abeta-40 pg/mg tissue**: 0.6218
+- **Abeta-42/40 Ratio**: 0.2364
+
+This shows lower Abeta-42 levels than other samples, implying less severe Alzheimer's disease pathology.
+
+### Step 2: Evaluate Total Tau Level.
+- **Total Tau ng/mg tissue**: 1.698
+
+A moderate total tau level points to some neurofibrillary tau pathology but does not indicate excessive levels.
+
+### Step 3: Assess Phospho-Tau Level.
+- **Phospho-Tau ng/mg tissue**: 0.6079
+
+Moderate phospho-tau levels suggest ongoing tau phosphorylation, consistent with mild-to-moderate tau pathology.
+
+### Step 4: Consider pTau/Total-Tau Ratio.
+- **pTau/Total-Tau Ratio**: 0.3581
+
+The ratio being slightly elevated indicates subtle changes in tau distribution, pointing toward potential progression towards more advanced stages of tauopathy.
+
+### Step 5: Examine Abeta Immunoreactivity.
+- **Fraction of Area**: 0.005764
+
+Low Abeta immunoreactivity suggests minimal plaque formation, supporting a milder course of Alzheimer's Disease (AD).
+
+### Step 6: Investigate AT8 pTau Immunoreactivity.
+- **Fraction of Area**: 7.978e-05
+
+Very low AT8 pTau immunoreactivity indicates almost no phosphorylated tau, reinforcing the idea of mild tau pathology.
+
+### Step 7: Review Tau-2 Immunoreactivity.
+- **Fraction of Area**: 0.001156
+
+Low Tau-2 immunore"
+160,309335446,1.0,0,0,0.0,"The patient has a high degree of astrocyte activation but shows minimal alpha-synuclein immunoreactivity and lacks detectable tau pathology. Based on these findings, it is most probable that the patient does not have Alzheimer's disease or other neurodegenerative conditions associated with elevated tau levels."
+167,309335477,1.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the FWM sample.
+
+- **Abeta-42 pg/mg tissue**: 403.1 pg/mg
+- **Abeta-40 pg/mg tissue**: 0.9634 pg/mg
+- **Abeta-42/40 ratio**: 418.4
+
+This high Abeta-42 level suggests significant accumulation of beta-amyloid plaques, leading to increased tau phosphorylation and neurofibrillary tangles.
+
+**Step 2:** Examine the total tau content.
+
+- **Total tau ng/mg tissue**: 1.038 ng/mg
+
+Moderate total tau indicates ongoing tau pathology without excessive buildup.
+
+**Step 3:** Evaluate the phospho-tau content.
+
+- **Phospho-tau ng/mg tissue**: 1.583 ng/mg
+
+High phospho-tau levels confirm active tau hyperphosphorylation, indicative of advanced tau pathology.
+
+**Step 4:** Assess the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 1.525
+
+Slightly elevated ratio suggests some tau hyperphosphorylation, aligning with advanced tau pathology.
+
+**Step 5:** Consider additional biomarkers like AT8 pTau, Tau-2, and alpha-synuclein.
+
+- **AT8 pTau immunoreactivity**: 0.003363
+- **Tau-2 immunoreactivity**: 0.004287
+- **alpha-synuclein immunoreactivity**: 3.138e-05
+
+No signs of Lewy bodies or Parkinson's disease features were detected, reinforcing the absence of advanced tau pathology."
+225,326765648,0.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the FWM sample.
+
+- **Abeta-42 pg/mg tissue**: 0.5323
+- **Abeta-40 pg/mg tissue**: 0.2468
+- **Abeta-42/40 ratio**: 2.157
+
+This shows that there are low Abeta-42 levels compared to other samples, implying less severe Alzheimer's disease pathology.
+
+**Step 2:** Evaluate the Abeta-42/40 ratio.
+
+- **Abeta-42/40 ratio**: 2.157
+
+A high ratio suggests an abundance of Abeta-42 relative to Abeta-40, possibly indicating more widespread plaque formation but also potentially due to lower overall Abeta levels.
+
+**Step 3:** Assess the total tau level.
+
+- **Total tau ng/mg tissue**: 1.553
+
+The presence of significant total tau points to active neurodegeneration, consistent with the observed high Abeta-42/40 ratio.
+
+**Step 4:** Consider the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 1.285
+
+High phospho-tau levels suggest ongoing tau phosphorylation, indicating ongoing neuronal damage.
+
+**Step 5:** Examine the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.8272
+
+A relatively low pTau/total-tau ratio may indicate some degree of neuroprotection or compensatory mechanisms against tau accumulation.
+
+**Step 6:** Review the Abeta immunoreactivity.
+
+- **Abeta immunoreactivity, fraction of area**: 0.001009
+
+Low Abeta immunoreactivity suggests minimal plaques or no detectable plaques.
+
+**Step 7:** Look at"
+228,309335485,0.0,1,1,0.0,"The FWM sample exhibits advanced tau pathology with high Abeta-42 levels, an elevated Abeta-42/40 ratio, high total tau levels, and a low pTau/total-tau ratio. These findings support the diagnosis of advanced tau pathology."
+244,309335447,1.0,1,1,0.0,"Based on the analysis of Abeta-42 levels, Abeta-42/40 ratio, total tau content, phospho-tau content, and pTau/total-tau ratio, the FWM sample shows advanced tau pathology. High Abeta-42 levels, an extremely high Abeta-42/40 ratio, significant total tau, phospho-tau, and pTau/total-tau ratios indicate that the patient has progressed beyond early stages of tauopathy. This supports the diagnosis of advanced tau pathology compared to earlier stages typically observed in younger individuals."
+272,326765648,0.0,1,1,0.0,"Given the high Abeta-42 levels, the elevated total tau and phosphorylated tau levels, and the lack of significant neuroinflammation, the patient is most likely in an advanced stage of tauopathy."
+299,309335447,1.0,1,1,0.0,"Advanced tau pathology was observed, characterized by high phospho-tau and pTau/total-tau ratios in the hippocampus and other limbic structures, indicating widespread neurofibrillary tangles throughout the brain."
+306,326765686,0.0,0,1,1.0,"### Step 1: Analyze the Abeta-42/pgm measurement in TCx.
+
+- **TCx**: Not measured.
+- **Implication**: Since Abeta-42/pgm is not provided, we cannot directly infer the level of Abeta-amyloid load.
+
+### Step 2: Assess the tau-related measurements in TCx.
+
+- **Total tau/ngm**: Not measured.
+- **Phospho-tau/ngm**: Not measured.
+- **pTau/total-tau ratio**: Not measured.
+- **Abeta immunoreactivity, fraction of area**: 0.002715
+- **AT8 pTau immunoreactivity, fraction of area**: 4.133e-05
+- **Tau-2 immunoreactivity (FFPE), fraction of area**: 0.001219
+- **alpha-synuclein immunoreactivity, fraction of area**: 2.183e-04
+- **GFAP astrogliosis, fraction of area**: 0.02621
+- **IBA1 microgliosis, fraction of area**: 0.05234
+- **alpha-synuclein (pg/mg tissue)**: Not measured
+- **Age at death (years)**: 92
+- **Male sex (1=male, 0=female)**: 1
+- **APOE e4 allele carrier (1=yes, 0=no)**: 0
+- **Years of education**: 21
+
+### Step 3: Evaluate the astrocyte and microglial responses in TCx.
+
+- **GFAP astrogliosis**: High (0.02621)
+- **IBA1 microgliosis**: Moderate (0.05234)
+
+### Step 4: Consider the neurodegenerative markers in"
+346,309335438,1.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the sample.
+
+- **Abeta-42 pg/mg tissue**: 0.2358
+- **Abeta-40 pg/mg tissue**: 0.7469
+- **Abeta-42/40 ratio**: 0.3157
+
+This shows low Abeta-42 levels relative to other samples, implying less severe Alzheimer's disease pathology.
+
+**Step 2:** Examine the total tau level.
+
+- **Total tau ng/mg tissue**: 1.414
+
+A moderate total tau level suggests some neurofibrillary tau pathology but does not indicate excessive buildup.
+
+**Step 3:** Evaluate the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 1.058
+
+The phospho-tau level is moderately elevated, indicating slight phosphorylated tau protein accumulation.
+
+**Step 4:** Assess the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.7479
+
+The ratio is mildly increased, suggesting mild hyperphosphorylation of tau proteins.
+
+**Step 5:** Consider the Abeta immunoreactivity.
+
+- **Abeta immunoreactivity fraction of area**: 0.003312
+
+Low Abeta immunoreactivity points to minimal beta-amyloid deposition, aligning with reduced overall AD pathology.
+
+**Step 6:** Review the AT8 pTau immunoreactivity.
+
+- **AT8 pTau immunoreactivity fraction of area**: 0.02233
+
+Moderate AT8 pTau immunoreactivity confirms the presence of phosphorylated tau, supporting the existence of tau pathology.
+
+**Step 7:** Examine the Tau-2 immunoreactivity.
+
+- **Tau-2 immunoreactivity (FFPE)**: 0.008"
+359,326765648,0.0,0,1,1.0,"**Step 1:** Analyze the Abeta-42 levels in the sample.
+
+- **Abeta-42 pg/mg tissue**: 0.3355
+- **Abeta-40 pg/mg tissue**: 0.7373
+- **Abeta-42/40 ratio**: 0.4551
+
+This shows that Abeta-42 levels are below average for other samples, implying less severe Alzheimer's disease pathology.
+
+**Step 2:** Assess the Abeta-42/40 ratio.
+
+- **Abeta-42/40 ratio**: 0.4551
+
+A lower ratio points towards reduced beta-amyloid deposition, typically linked to milder AD pathology.
+
+**Step 3:** Measure the total tau level.
+
+- **Total tau (ng/mg tissue)**: 1.431
+
+While there is significant total tau, this might be due to ongoing neurodegeneration rather than advanced tau pathology.
+
+**Step 4:** Investigate the phospho-tau level.
+
+- **Phospho-tau (ng/mg tissue)**: 2.403
+
+High phospho-tau levels suggest active tau phosphorylation, indicative of ongoing tau accumulation.
+
+**Step 5:** Examine the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 1.68
+
+A high pTau/total-tau ratio indicates increased phosphorylated tau relative to total tau, consistent with ongoing tau hyperphosphorylation.
+
+**Step 6:** Review the Abeta immunoreactivity.
+
+- **Abeta immunoreactivity, fraction of area**: 0.01051
+
+Low Abeta immunoreactivity implies minimal plaque formation, reinforcing mild AD pathology.
+
+**Step 7:** Examine the AT8 pTau immunoreactivity.
+
+- **AT8 pTau immunoreactivity,"
+364,326765661,0.0,0,0,0.0,"Given the low Abeta-42 levels, moderate to high tau pathology, and significant astrocyte and microglial activation, this donor is categorized as having early tau pathology rather than advanced tau pathology."
+366,326765675,1.0,1,1,0.0,"Given the high Abeta-42 levels, the high Abeta-42/40 ratio, the presence of significant total tau, and the elevated pTau/total-tau ratio, the patient likely exhibits advanced tau pathology."
+0,309335467,0.0,1,1,0.0,"Given the high Abeta-42 levels, substantial total tau content, elevated phospho-tau, and high pTau/total-tau ratio, the patient is exhibiting advanced tau pathology."
+12,326765676,1.0,1,1,0.0,"### Step 1: Analyze Abeta-42 Levels.
+- **Abeta-42 (pg/mg tissue)**: Not measured.
+
+### Step 2: Assess Abeta-40 Levels.
+- **Abeta-40 (pg/mg tissue)**: Not measured.
+
+### Step 3: Evaluate Abeta-42/40 Ratio.
+- **Abeta-42/40 ratio**: Not measured.
+
+### Step 4: Examine Total Tau Levels.
+- **Total tau (ng/mg tissue)**: Not measured.
+
+### Step 5: Look at Phospho-Tau Levels.
+- **Phospho-tau (ng/mg tissue)**: Not measured.
+
+### Step 6: Consider pTau/Total-Tau Ratio.
+- **pTau/total-tau ratio**: Not measured.
+
+### Step 7: Review Abeta Immunoreactivity.
+- **Abeta immunoreactivity, fraction of area**: 0.01316
+
+This high level suggests significant accumulation of beta-amyloid plaques, indicative of Alzheimer’s disease.
+
+### Step 8: Check AT8 pTau Immunoreactivity.
+- **AT8 pTau immunoreactivity, fraction of area**: 0.06312
+
+High AT8 pTau immunoreactivity indicates phosphorylated tau protein, consistent with tau hyperphosphorylation observed in Alzheimer’s disease.
+
+### Step 9: Investigate Tau-2 Immunoreactivity.
+- **Tau-2 immunoreactivity (FFPE), fraction of area**: 0.01218
+
+Low Tau-2 immunoreactivity suggests minimal neurofibrillary tangles, indicating less severe tauopathy compared to other regions.
+
+### Step 10: Examine Alpha-Synuclein Immunoreactivity.
+- **alpha-synuclein immunoreactivity, fraction of area**: 4.018e-05"
+46,326765681,0.0,0,0,0.0,"**Step 1:** Analyze the levels of Abeta-42 in the sample.
+
+- **Abeta-42 pg/mg tissue**: 123.9 pg/mg
+- **Abeta-40 pg/mg tissue**: 0.7595 pg/mg
+- **Abeta-42/40 ratio**: 163.1
+
+This shows elevated Abeta-42 levels with low Abeta-40 levels, indicating potential buildup of beta-amyloid plaques without significant neurofibrillary tangles.
+
+**Step 2:** Assess the total tau level.
+
+- **Total tau ng/mg tissue**: 1.363 ng/mg
+
+Moderate total tau levels suggest ongoing neurodegeneration but no severe tauopathies.
+
+**Step 3:** Evaluate the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 1.048 ng/mg
+
+The phospho-tau level is slightly below that of total tau, implying less phosphorylated tau protein than total tau, possibly indicating fewer neurofibrillary tangles.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.7693
+
+A lower pTau/total-tau ratio may reflect reduced neurofibrillary tangle pathology relative to total tau load.
+
+**Step 5:** Examine additional biomarker data.
+
+- **Abeta immunoreactivity, fraction of area**: 0.02137
+- **AT8 pTau immunoreactivity, fraction of area**: 8.429e-04
+- **Tau-2 immunoreactivity (FFPE), fraction of area**: 0.002047
+- **alpha-synuclein immunoreactivity, fraction of area**: 3.387e"
+52,326765669,1.0,0,0,0.0,"**Step 1:** Analyze the Abeta-42 levels in the FWM sample.
+
+- **Abeta-42 pg/mg tissue**: 0.3209
+- **Abeta-40 pg/mg tissue**: 0.6279
+- **Abeta-42/40 ratio**: 0.511
+
+This shows lower Abeta-42 levels compared to other samples, implying less severe Alzheimer's disease pathology.
+
+**Step 2:** Examine the total tau level.
+
+- **Total tau ng/mg tissue**: 1.156
+
+Moderate total tau levels suggest some neurofibrillary tau pathology but not excessively high.
+
+**Step 3:** Evaluate the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 0.7134
+
+The phospho-tau level is relatively low, indicating minimal phosphorylated tau protein accumulation.
+
+**Step 4:** Assess the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.6172
+
+The ratio is slightly elevated, suggesting mild hyperphosphorylation of tau proteins, consistent with early-stage tau pathology.
+
+**Step 5:** Consider the overall pattern of findings.
+
+Based on these results, the patient likely has early-stage tau pathology rather than advanced tau pathology.
+
+**Final Answer:** early tau | CONFIDENCE: 80"
+57,326765669,1.0,1,1,0.0,"**Step 1:** Analyze the levels of Abeta-42 in the sample.
+
+- **Abeta-42 pg/mg tissue**: 0.2358
+- **Abeta-40 pg/mg tissue**: 0.8905
+- **Abeta-42/40 ratio**: 0.2648
+
+This shows that Abeta-42 levels are below average for this sample, implying less severe Alzheimer's disease pathology.
+
+**Step 2:** Evaluate the total tau concentration.
+
+- **Total tau ng/mg tissue**: 1.421
+
+A high total tau level points towards significant neurofibrillary tau pathology.
+
+**Step 3:** Assess the phosphorylation status of tau.
+
+- **Phospho-tau ng/mg tissue**: 0.8795
+
+The presence of phosphorylated tau protein strongly supports the diagnosis of advanced tau pathology.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.619
+
+A lower pTau/total-tau ratio may suggest more widespread tau pathology rather than localized neurofibrillary changes.
+
+**Step 5:** Examine the Abeta immunoreactivity.
+
+- **Fraction of area**: 0.00241
+
+Low Abeta immunoreactivity indicates minimal beta-amyloid deposition, consistent with mild cognitive impairment but not indicative of advanced tau pathology.
+
+**Step 6:** Investigate the AT8 pTau immunoreactivity.
+
+- **Fraction of area**: 0.001361
+
+AT8 pTau immunoreactivity is very low, confirming minimal phosphorylated tau within neurons.
+
+**Step 7:** Review the Tau-2 immunoreactivity.
+
+- **Fraction of area**: 0.002387
+
+Tau-2 immunoreactivity is also very low, reinforcing the"
+91,309335488,0.0,0,0,0.0,"Given that Abeta-42 and Abeta-40 levels are not measured, no significant accumulation of beta-amyloid plaques can be determined. The absence of phosphorylated tau indicates minimal neurofibrillary tangles, suggesting an early stage of tauopathy. 
+
+For tau pathology assessment, the following data points were unavailable:
+- Total tau ng/mg tissue
+- Alpha-synuclein immunoreactivity
+- GFAP astrogliosis fraction
+- IBA1 microgliosis fraction
+
+These findings show moderate astrocyte and microglial activation without indicating severe neurodegeneration. Therefore, the patient likely has early-stage tau pathology."
+101,326765654,1.0,1,1,0.0,"Given the high Abeta-42 levels, the elevated Abeta-42/40 ratio, and the presence of phosphorylated tau without signs of synucleinopathies or gliosis, the patient likely has advanced tau pathology."
+140,326765669,1.0,0,0,0.0,"**Step 1:** Analyze the Abeta-42 levels in the TCx sample.
+
+- **Abeta-42 pg/mg tissue**: 0.9053
+- **Abeta-40 pg/mg tissue**: 0.3991
+- **Abeta-42/40 ratio**: 2.268
+
+This shows elevated Abeta-42 levels but moderate Abeta-40 levels, indicating a balanced accumulation of beta-amyloid and potential downstream effects on tau pathology.
+
+**Step 2:** Evaluate the total tau level.
+
+- **Total tau ng/mg tissue**: 1.689
+
+A relatively low total tau level suggests minimal neurofibrillary tau pathology.
+
+**Step 3:** Assess the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 0.8801
+
+The phospho-tau level is also low, implying minimal phosphorylated tau protein, typically associated with early stages of Alzheimer's disease.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.5211
+
+A low pTau/total-tau ratio corroborates the lack of significant neurofibrillary tau pathology.
+
+**Step 5:** Examine other biomarkers.
+
+- **Abeta immunoreactivity, fraction of area**: 8.005e-04
+- **AT8 pTau immunoreactivity, fraction of area**: 1.499e-04
+- **Tau-2 immunoreactivity (FFPE)**: 0.002129
+- **alpha-synuclein immunoreactivity, fraction of area**: 1.173e-04
+- **GFAP astrogliosis, fraction of area**: 0.02676"
+147,326765651,0.0,1,1,0.0,"High Abeta-42 levels and low Abeta-40 levels suggest accumulation of beta-amyloid plaques without significant neurofibrillary tangles. Elevated total tau and phosphorylated tau indicate ongoing tau hyperphosphorylation, indicating progression to more advanced tau pathology compared to earlier stages."
+155,309335494,0.0,1,1,0.0,"Given the low Abeta-42 levels, moderate total tau, high phospho-tau, and elevated pTau/total-tau ratio, the patient likely has advanced tau pathology."
+187,326765684,0.0,0,1,1.0,"**Step 1:** Analyze the Abeta-42 levels in the FWM sample.
+
+- **Abeta-42 pg/mg tissue**: 0.4226
+- **Abeta-40 pg/mg tissue**: 0.5846
+- **Abeta-42/40 ratio**: 0.7229
+
+This shows lower Abeta-42 levels than other samples, implying milder Alzheimer's disease pathology.
+
+**Step 2:** Examine the total tau level.
+
+- **Total tau ng/mg tissue**: 1.161
+
+A moderate total tau level points to some neurofibrillary tau pathology but not excessively high.
+
+**Step 3:** Evaluate the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 1.345
+
+The phospho-tau level is also moderate, showing ongoing tau phosphorylation.
+
+**Step 4:** Assess the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 1.158
+
+This ratio falls within normal limits, indicating no significant imbalance between hyperphosphorylated and non-phosphorylated tau.
+
+**Step 5:** Consider the Abeta immunoreactivity.
+
+- **Fraction of area**: 1.946e-04
+
+Low Abeta immunoreactivity suggests minimal beta-amyloid deposition, consistent with mild AD pathology.
+
+**Step 6:** Review the AT8 pTau immunoreactivity.
+
+- **Fraction of area**: 3.047e-05
+
+Moderate AT8 pTau immunoreactivity indicates some tau phosphorylation activity.
+
+**Step 7:** Look at the Tau-2 immunoreactivity.
+
+- **Fraction of area**: 0.002814
+
+High Tau-2 immunoreactivity suggests active tau pathology, especially in the neocortex"
+209,309335453,0.0,1,1,0.0,"Given the high Abeta-42 levels, the elevated Abeta-42/40 ratio, the presence of phosphorylated tau, and the signs of neurodegeneration indicated by increased microgliosis and reduced pTau/total-tau ratio, the patient likely has advanced tau pathology."
+219,326765673,1.0,1,1,0.0,"Given the extremely high Abeta-42 levels, the very high Abeta-42/40 ratio, the elevated total tau and phospho-tau contents, and the low pTau/total-tau ratio, the patient's FWM sample clearly exhibits advanced tau pathology."
+249,326765655,1.0,1,1,0.0,"The analysis reveals that the patient's brain region (TCx) exhibits advanced tau pathology with high Abeta-42 levels, substantial phospho-tau, and an elevated pTau/total-tau ratio. This indicates a balance between plaque buildup and active tau phosphorylation, characteristic of advanced stages of Alzheimer's disease."
+252,326765676,1.0,0,0,0.0,"Given the high Abeta-42 levels, low total tau, phospho-tau, and pTau/total-tau ratios, the donor likely has early-stage AD pathology rather than advanced tau pathology."
+275,326765689,0.0,1,1,0.0,"**Step 1:** Analyze the Abeta-42 levels in the FWM sample.
+
+- **Abeta-42 pg/mg tissue**: 396.2 pg/mg
+- **Abeta-40 pg/mg tissue**: 1.833 pg/mg
+- **Abeta-42/40 ratio**: 216.2
+
+This high Abeta-42 level suggests significant accumulation of beta-amyloid plaques, leading to increased tau phosphorylation and neurofibrillary tangles.
+
+**Step 2:** Examine the Abeta-42/40 ratio.
+
+- **Abeta-42/40 ratio**: 216.2
+
+A low ratio indicates more abundant Abeta-42 relative to Abeta-40, indicating potential mislocalization of Abeta-42 within neurons.
+
+**Step 3:** Assess the total tau content.
+
+- **Total tau ng/mg tissue**: 0.9518 ng/mg
+
+The presence of total tau above baseline suggests ongoing neurodegeneration despite reduced Abeta-42 levels.
+
+**Step 4:** Evaluate the phospho-tau content.
+
+- **Phospho-tau ng/mg tissue**: 0.3004 ng/mg
+
+High phospho-tau levels confirm active tau hyperphosphorylation, consistent with advanced tau pathology.
+
+**Step 5:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.3156
+
+An elevated pTau/total-tau ratio further supports the presence of advanced tau pathology.
+
+**Final Assessment:** The patient exhibits advanced tau pathology due to high Abeta-42 levels, low Abeta-42/40 ratio, elevated total tau, phospho-tau, and pTau/total-tau ratios."
+288,309335471,1.0,1,1,0.0,"The analysis reveals high Abeta-42 levels (238.3 pg/mg), moderate total tau (1.338 ng/mg), and low pTau/total-tau ratio (2.04) despite the presence of phospho-tau. These findings suggest advanced tau pathology in the patient."
+292,309335440,0.0,0,0,0.0,"To determine whether the tau pathology in the HIP sample is advanced or early, we require specific measurements such as Abeta-42/pgm, Abeta-40/pgm, Abeta-42/40 ratio, total tau/ngm, phospho-tau/ngm, and pTau/total-tau ratio. Without these data points, it is impossible to make an accurate classification."
+314,309335443,0.0,0,0,0.0,"EARLY stage Alzheimer's disease (AD) pathology characterized by low Abeta-42 levels, moderate total tau, slight hyperphosphorylation, and minimal neurodegeneration."
+328,326765655,1.0,1,1,0.0,"High Abeta-42 levels (597.7 pg/mg) and elevated phospho-tau (1.602 ng/mg) indicate significant accumulation of beta-amyloid plaques and ongoing tau hyperphosphorylation, respectively. This suggests a strong correlation between amyloid deposition and tau accumulation, leading to substantial neurodegeneration and cognitive decline."
+331,309335488,0.0,1,1,0.0,"### Step 1: Analyze Abeta-42 Levels
+
+- **Abeta-42 (pg/mg tissue)**: Not measured.
+
+### Step 2: Assess Abeta-40 Levels
+
+- **Abeta-40 (pg/mg tissue)**: Not measured.
+
+### Step 3: Evaluate Abeta-42/40 Ratio
+
+- **Abeta-42/40 ratio**: Not measured.
+
+### Step 4: Examine Total Tau Levels
+
+- **Total tau (ng/mg tissue)**: Not measured.
+
+### Step 5: Look at Phospho-Tau Levels
+
+- **Phospho-tau (ng/mg tissue)**: Not measured.
+
+### Step 6: Consider pTau/Total-Tau Ratio
+
+- **pTau/total-tau ratio**: Not measured.
+
+### Step 7: Review Abeta Immunoreactivity
+
+- **Abeta immunoreactivity, fraction of area**: 0.01093
+
+This high level suggests significant accumulation of beta-amyloid plaques, indicative of Alzheimer's disease.
+
+### Step 8: Check AT8 pTau Immunoreactivity
+
+- **AT8 pTau immunoreactivity, fraction of area**: 0.01161
+
+This indicates increased phosphorylated tau protein, consistent with neurofibrillary tangles associated with tauopathy.
+
+### Step 9: Investigate Tau-2 Immunoreactivity
+
+- **Tau-2 immunoreactivity (FFPE), fraction of area**: 0.002869
+
+A low percentage of Tau-2 positive cells could suggest reduced neurofibrillary tangles compared to other regions.
+
+### Step 10: Examine Alpha-Synuclein Immunoreactivity
+
+- **Alpha-synuclein immunoreactivity, fraction of area**: 0.001811
+
+Low alpha-synuclein positivity might indicate"
+332,309335471,1.0,1,1,0.0,"**Step 1:** Examine the Abeta-42 concentrations in the PCx sample.
+
+- **Abeta-42 pg/mg tissue**: 235.9 pg/mg
+- **Abeta-40 pg/mg tissue**: 896.5 pg/mg
+- **Abeta-42/40 ratio**: 0.2632
+
+This shows higher Abeta-42 levels relative to Abeta-40, implying increased beta-amyloid deposition, potentially leading to neurotoxic effects and tau accumulation.
+
+**Step 2:** Assess the Abeta-42/40 ratio.
+
+- A low ratio indicates more Abeta-42 than Abeta-40, suggesting possible mislocalization or aggregation of Abeta-42.
+
+**Step 3:** Evaluate the total tau concentration.
+
+- **Total tau ng/mg tissue**: 0.9555 ng/mg
+- **Phospho-tau ng/mg tissue**: 2.602 ng/mg
+- **pTau/total-tau ratio**: 2.724
+
+An elevated phospho-tau level points to ongoing tau phosphorylation, indicative of active neurodegeneration.
+
+**Step 4:** Conclude on the progression of tau pathology based on previous findings.
+
+- Previous studies indicated advanced tau pathology in PCx.
+- High Abeta-42 levels and low Abeta-42/40 ratio suggest a shift toward advanced tau pathology."
+348,309335443,0.0,0,0,0.0,"**Step 1:** Analyze the Abeta-42 levels in the FWM sample.
+
+- **Abeta-42 pg/mg tissue**: 0.3515
+- **Abeta-40 pg/mg tissue**: 0.553
+- **Abeta-42/40 ratio**: 0.6356
+
+This shows low Abeta-42 levels relative to other samples, implying less severe Alzheimer's disease pathology.
+
+**Step 2:** Examine the total tau level.
+
+- **Total tau ng/mg tissue**: 1.087
+
+Moderate total tau levels suggest some neurofibrillary tau pathology but not excessively high.
+
+**Step 3:** Evaluate the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 0.6272
+
+The phospho-tau level is relatively low, indicating minimal phosphorylated tau protein accumulation.
+
+**Step 4:** Assess the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.5772
+
+The ratio is slightly elevated, suggesting mild hyperphosphorylation of tau proteins.
+
+**Step 5:** Consider the Abeta immunoreactivity.
+
+- **Fraction of area**: 1.615e-04
+
+Low Abeta immunoreactivity indicates minimal beta-amyloid deposition, consistent with lower overall AD pathology.
+
+**Step 6:** Review the other biomarkers.
+
+- **AT8 pTau immunoreactivity**: 1.199e-04
+- **Tau-2 immunoreactivity**: 0.003717
+- **alpha-synuclein immunoreactivity**: 5.615e-05
+- **GFAP astrogliosis**: 0.07011
+- **IBA1 microgliosis**: "
+369,309335467,0.0,1,1,0.0,"Given the high Abeta-42 levels, the elevated total tau content, the presence of phospho-tau, and the high pTau/total-tau ratio, the patient's brain region sampled (PCx) likely exhibits advanced tau pathology."
+2,309335493,1.0,1,1,0.0,"The high Abeta-42 and total tau levels in the FWM sample indicate an elevated amyloid burden and advanced neurofibrillary tau pathology, suggesting significant neurodegeneration and potential atrophy."
+25,326765658,1.0,1,1,0.0,"The patient exhibits advanced tau pathology characterized by high Abeta-42 levels, a low Abeta-42/40 ratio, elevated phospho-tau, and evidence of neurodegeneration through markers like AT8 pTau, Tau-2, and IBA1 microgliosis."
+55,309335456,1.0,1,1,0.0,"The patient has an abnormally high Abeta-42 level of 517.5 pg/mg tissue, indicating significant Alzheimer's disease risk. Total tau levels are also elevated at 1.087 ng/mg, suggesting advanced tau pathology. Neurodegeneration and atrophy are evident across the brain, consistent with advanced tau pathology."
+63,309335482,1.0,1,1,0.0,"The patient's brain contains high levels of both amyloid beta (Abeta-42) and hyperphosphorylated tau protein, suggesting severe neurodegeneration and potential atrophy in the hippocampus."
+77,467056406,1.0,1,1,0.0,"The Abeta-42 level in the FWM sample is notably elevated at 407.5 pg/mg tissue, surpassing the average of other samples. This high Abeta-42 level points to an increased amyloid burden.
+
+Additionally, the phospho-tau level is elevated at 1.12 ng/mg tissue, suggesting elevated phosphorylated tau protein. Furthermore, the pTau/total-tau ratio is 0.8589, which exceeds the normal range but remains within the upper limit of the healthy range. These findings indicate moderate-to-high levels of tau pathology.
+
+Astrocyte activation (GFAP astrogliosis) and microglial activity (IBA1 microgliosis) are noted, correlating with ongoing neurodegenerative processes and potential inflammation. These observations support advanced tau pathology, especially affecting the limbic system.
+
+Given this comprehensive analysis of biomarkers and clinical data, the donor likely exhibits symptoms characteristic of Alzheimer’s disease progression."
+89,309335461,0.0,0,0,0.0,"The Abeta-42 level in Amyloid Burden Analysis is low, implying minimal amyloid deposition. Phospho-tau levels are elevated but remain within normal limits, indicating mild tauopathy without significant accumulation. Neurodegeneration and atrophy measurements show moderate astrogliosis (GFAP) and microgliosis (IBA1), suggesting some neuronal loss and gliosis. Considering these factors—lower Abeta-42 levels, mild tau pathology, and moderate neurodegeneration—the final assessment places this donor in the **EARLY tau pathology** category with confidence of **85%.**"
+124,309335441,0.0,1,1,0.0,"The Abeta-42 level in TCx is markedly elevated at 564.5 pg/mg tissue, indicating a strong presence of amyloid plaques. Additionally, the total tau level is high at 1.482 ng/mg tissue, suggesting significant accumulation of hyperphosphorylated tau protein. These elevated levels indicate substantial neurodegeneration and potential atrophy in the hippocampus-like structure. Consequently, the patient likely has advanced tau pathology associated with Alzheimer’s disease, as evidenced by the high levels of both amyloid and tau proteins, which point to a more severe stage of the disease characterized by extensive neurodegeneration and atrophy."
+126,309335456,1.0,1,1,0.0,"High Abeta-42 levels indicate significant accumulation of beta-amyloid plaques, typical of Alzheimer's disease. Elevated phospho-tau also points towards ongoing tau hyperphosphorylation, further supporting AD progression. These findings correlate positively with increased neurofibrillary tangles and accelerate neurodegeneration and cognitive decline in AD patients."
+142,309335484,1.0,0,0,0.0,"The patient exhibits early signs of tau pathology, possibly due to a low amyloid burden and mild tau accumulation without substantial neurodegeneration or atrophy."
+148,309335461,0.0,0,0,0.0,"The Abeta-42 level in Amyloid Burden is low, implying minimal amyloid deposition. Elevated phospho-tau levels suggest active tau pathology, though the pTau/total-tau ratio remains within normal bounds, indicating mild rather than severe tau buildup. Microgliosis and astrocyte presence indicate ongoing inflammation with no notable atrophy. Considering the low Abeta-42 levels and moderate tau pathology without significant neurodegeneration, the risk of advanced tau pathology appears lower. Final assessment: EARLY tau | CONFIDENCE: 80"
+151,326765658,1.0,1,1,0.0,"Given the high Abeta-42 levels, moderate Abeta-40 levels, elevated phospho-tau, and low tau pathology markers, the patient likely has advanced tau pathology."
+158,467056406,1.0,1,1,0.0,"The Abeta-42 level in Amyloid Burden (AB) is significantly elevated at 470 pg/mg tissue compared to other samples, indicating a higher risk of Alzheimer's disease-related pathologies. Phospho-tau levels are also elevated at 5.981 ng/mg tissue, suggesting advanced neurofibrillary tau pathology. The pTau/total-tau ratio of 5.212 further confirms this advanced state. Neurodegeneration and atrophy are evident throughout the hippocampus due to the elevated phospho-tau and pTau/total-tau ratios. Given these findings, the patient likely experienced severe cognitive decline before their death. Therefore, the correct classification for this donor is **ADVANCED tau**, with a confidence level of 95%."
+171,467056409,0.0,1,1,0.0,"The patient's brain shows substantial amyloid buildup and heightened tau phosphorylation, coupled with persistent neuroinflammation indicated by elevated GFAP and IBA1 scores, leading to an advanced stage of tau pathology."
+174,467056406,1.0,0,0,0.0,"**Step 1:** Assess the Abeta-42 concentration within the TCx sample.
+
+- **Abeta-42 (pg/mg tissue):** Not recorded.
+
+**Analysis:** Given that Abeta-42 concentrations are unreported, it remains unclear whether there has been an increase in beta-amyloid plaque formation associated with Alzheimer's disease progression.
+
+**Conclusion:** There is insufficient information to confirm either the presence of early or advanced tau pathology specifically linked to this level of Abeta-42.
+
+**Final Answer:** Early tau | Confidence: 0"
+211,309335463,1.0,0,0,0.0,"The Abeta-42 level in Amyloid Burden Analysis is significantly elevated at 77.94 pg/mg tissue, suggesting a substantial amyloid burden. In Tau Pathology Assessment, the phospho-tau levels are notably low at 0.4363 ng/mg tissue, indicating minimal phosphorylated tau protein, supporting the absence of significant tau pathology. Neurodegeneration/Atrophy Evaluation shows astrocyte (GFAP astrogliosis) and microglial (IBA1 microgliosis) activation without evidence of extensive neuronal loss or gliosis typical of advanced tau pathology. Clinical Outcome Considerations indicate that the clinical presentation aligns more closely with early-stage disease progression rather than advanced stages due to the low phospho-tau levels and lack of significant neurodegeneration markers."
+222,309335444,1.0,1,1,0.0,"High Abeta-42 levels, moderate total tau, and low pTau/total-tau ratio indicate significant neurodegeneration in the hippocampus."
+234,309335490,0.0,0,0,0.0,"**Step 1:** Analyze the Abeta-42 levels in the TCx sample.
+
+- **Abeta-42 pg/mg tissue**: 0.4183
+- **Abeta-40 pg/mg tissue**: 0.546
+- **Abeta-42/40 ratio**: 0.7661
+
+This shows lower Abeta-42 levels than other samples, implying milder Alzheimer's disease pathology.
+
+**Step 2:** Assess the total tau level.
+
+- **Total tau ng/mg tissue**: 1.406
+
+Moderate total tau levels suggest some neurofibrillary tau pathology without being exceptionally high.
+
+**Step 3:** Evaluate the phospho-tau level.
+
+- **Phospho-tau ng/mg tissue**: 0.3877
+
+The phospho-tau level is moderately elevated, indicating some phosphorylated tau protein accumulation.
+
+**Step 4:** Consider the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.2757
+
+This ratio falls within the normal range, suggesting no substantial increase in hyperphosphorylated tau relative to total tau.
+
+**Step 5:** Examine the Abeta immunoreactivity.
+
+- **Fraction of area**: 0.004182
+
+Low Abeta immunoreactivity points to minimal beta-amyloid deposition, aligning with mild Alzheimer's disease pathology.
+
+**Step 6:** Investigate the AT8 pTau immunoreactivity.
+
+- **Fraction of area**: 8.264e-05
+
+AT8 pTau immunoreactivity is extremely low, confirming minimal tau pathology.
+
+**Step 7:** Review the Tau-2 immunoreactivity.
+
+- **Fraction of area**: 0.001638
+
+Tau-2 immunoreactivity is also extremely low, corroborating the"
+237,326765649,0.0,1,1,0.0,"Based on the analysis of Abeta-42 levels, Abeta-42/40 ratio, total tau content, phospho-tau concentration, and pTau/total-tau ratio, the patient's PCx sample demonstrates advanced tau pathology. This includes high Abeta-42 levels, low Abeta-42/40 ratio, high total tau content, elevated phospho-tau, and an increased pTau/total-tau ratio. These findings support the diagnosis of advanced tau pathology with confidence."
+240,326765660,0.0,1,1,0.0,"The Abeta-42 concentration in TCx is markedly elevated at 465.8 pg/mg tissue, suggesting a prominent presence of amyloid plaques. Additionally, the total tau level is exceptionally high at 1.257 ng/mg tissue, indicating a significant accumulation of hyperphosphorylated tau protein. These observations suggest substantial neurodegeneration and potential atrophy in the hippocampal-like region (TCx). Consequently, the patient is likely exhibiting symptoms characteristic of Alzheimer’s disease progression. Therefore, based on the combined data of high amyloid and tau levels alongside signs of neurodegeneration, the donor has **advanced tau pathology**, primarily affecting the neocortex."
+241,309335444,1.0,0,0,0.0,"EARLY tau | CONFIRMED Alzheimer's disease based on high Abeta-42 levels, low total tau, elevated phospho-tau, and normal pTau/total-tau ratio. No signs of advanced tau pathology or synucleinopathy detected by other biomarker assessments."
+242,467056409,0.0,0,0,0.0,"The Abeta-42 level in PCx is significantly elevated at 195.3 pg/mg tissue compared to other regions like FWM (514.9 pg/mg). Elevated Abeta levels are associated with an increased risk of Alzheimer's disease. The phospho-tau level is also notably high at 0.6856 ng/mg tissue, indicating ongoing neurodegeneration. Despite the high levels, the low values suggest less severe neurodegeneration compared to more advanced stages of AD. Given the high levels of both Abeta and phosphorylated tau, along with the young age at death (82 years old), it is inferred that this individual likely falls into the category of early-stage AD rather than advanced-stage AD."
+251,309335484,1.0,0,0,0.0,"**Step 1:** Analyze the levels of Abeta-42 in the sample.
+
+- **Abeta-42 pg/mg tissue**: 0.6099
+- **Abeta-40 pg/mg tissue**: 0.4058
+- **Abeta-42/40 ratio**: 1.503
+
+This shows lower Abeta-42 levels than other samples, implying milder Alzheimer's disease pathology.
+
+**Step 2:** Assess the total tau concentration.
+
+- **Total tau ng/mg tissue**: 1.004
+
+Moderate total tau levels suggest some neurofibrillary tau pathology but not excessively high.
+
+**Step 3:** Evaluate the phospho-tau concentration.
+
+- **Phospho-tau ng/mg tissue**: 0.5415
+
+The phospho-tau level is relatively low, indicating minimal phosphorylated tau protein accumulation.
+
+**Step 4:** Investigate the pTau/total-tau ratio.
+
+- **pTau/total-tau ratio**: 0.5393
+
+This ratio is slightly elevated, suggesting mild hyperphosphorylation of tau proteins, indicative of early-stage tau pathology.
+
+**Step 5:** Examine the Abeta immunoreactivity.
+
+- **Fraction of area**: 5.117e-04
+
+Low Abeta immunoreactivity indicates minimal beta-amyloid deposition, typical for individuals without significant AD pathology.
+
+**Step 6:** Check the AT8 pTau immunoreactivity.
+
+- **Fraction of area**: 1.267e-04
+
+AT8 pTau immunoreactivity is also very low, reinforcing minimal tau pathology.
+
+**Step 7:** Review the Tau-2 immunoreactivity.
+
+- **Fraction of area**: 8.436e-04
+
+Tau-2 immunoreactivity is extremely low, confirming minimal tau pathology"
+277,309335461,0.0,1,1,0.0,"The Amyloid Burden: The Abeta-42 level in TCx is notably elevated, indicating a substantial amyloid load.
+
+The Tau Pathology:
+- Total Tau: Higher than typical but within normal limits.
+- Phospho-Tau: Significantly elevated, suggesting extensive tau pathology.
+- pTau/Total-Tau Ratio: A high ratio signifies severe tau hyperphosphorylation.
+
+Neurodegeneration/Atrophy:
+- GFAP Astrogliosis: Moderately increased, indicative of ongoing inflammation.
+- IBA1 Microgliosis: Also moderately increased, reflecting a chronic inflammatory response.
+
+Clinical Outcome:
+Given the high levels of both amyloid and phosphorylated tau, along with moderate neurodegeneration and gliosis, this donor likely displays advanced tau pathology."
+305,326765672,0.0,1,1,0.0,"The patient has a high Abeta-42 level at 0.1712 pg/mg tissue, indicating a greater risk for Alzheimer's disease. Phosphorylated tau levels are also elevated at 3.656 ng/mg tissue, suggesting significant neurofibrillary tangle formation typical of advanced tau pathology. Neurodegeneration and atrophy are evident due to increased phospho-tau, confirming advanced tau pathology. Astrocyte GFAP astrogliosis and microglial IBA1 microgliosis further support this diagnosis."
+310,309335493,1.0,1,1,0.0,"High Abeta-42 levels (425.5 pg/mg) suggest significant accumulation of beta-amyloid plaques, leading to increased tau phosphorylation and neurofibrillary tangles. Moderate total tau (1.202 ng/mg) and low pTau/total-tau ratio (2.194) indicate ongoing tau hyperphosphorylation without overly pronounced neurofibrillary tangles. This combination points towards a situation with substantial amyloid deposition and active tau hyperphosphorylation without extreme neurodegeneration."
+313,309335460,0.0,1,1,0.0,"The analysis indicates that Amyloid-42 levels are exceptionally high at 5.872 pg/mg tissue, suggesting an increased risk for Alzheimer's disease. Phospho-tau levels are also notably high at 1.385 ng/mg tissue, indicating advanced tau pathology, which correlates closely with higher Braak stages. Neurodegeneration and atrophy are evident in the hippocampus (HIP), supporting the presence of advanced tau pathology. Therefore, the likelihood of advanced tau pathology is extremely high based on these findings."
+319,326765685,1.0,1,1,0.0,The elevated Abeta-42 level at 434.4 pg/mg tissue and the high phospho-tau level at 0.6157 ng/mg tissue indicate significant neurodegeneration and advanced tau pathology. This combination increases the likelihood of advanced tau pathology.
+324,467056406,1.0,1,1,0.0,"The Abeta-42 level in PCx is significantly elevated at 544.5 pg/mg tissue, correlating strongly with an increased risk of Alzheimer's disease. The phospho-tau level in PCx is also notably high at 4.298 ng/mg tissue, indicative of heightened tau pathology despite minimal neurodegeneration."
+347,326765685,1.0,1,1,0.0,"The Abeta-42 concentration in TCx is markedly elevated at 479.9 pg/mg tissue, suggesting a prominent presence of amyloid plaques. Additionally, the total tau level is exceptionally high at 1.361 ng/mg tissue, indicating significant accumulation of hyperphosphorylated tau protein. These observations suggest substantial neurodegeneration and atrophy in the hippocampal-like structure (TCx), which aligns with advanced tau pathology. Consequently, the patient is likely experiencing Alzheimer’s disease progression."
+349,326765682,0.0,1,1,0.0,"Given the lack of detectable biomarkers such as Abeta-42/pgm, Abeta-40/pgm, Abeta-42/40 ratio, total tau/ngm, phospho-tau/ngm, and pTau/total-tau ratio, along with the presence of significant neurodegenerative markers including astrocyte and microglial activation, we can conclude that the patient has advanced tau pathology."
+353,326765685,1.0,1,1,0.0,"The patient's Amyloid Burden is significantly elevated at 194.2 pg/mg tissue, indicating a higher amyloid burden compared to other samples. The Tau Pathology shows a phospho-tau level of 0.3257 ng/mg tissue, which is above average but still within the range observed in some early-stage patients. The pTau/total-tau ratio of 0.2902 suggests moderate phosphorylation, suggesting ongoing tau hyperphosphorylation rather than complete aggregation. Neurodegeneration and atrophy are evident through astrocyte activation (GFAP astrogliosis at 0.02407) and microglial activity (IBA1 microgliosis at 0.05842), typical of more advanced stages of disease progression. Given these factors, the patient likely falls into the category of advanced tau pathology."

@@ -1,0 +1,29 @@
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llcrccl@{}}
+        \toprule
+        Task & Contrast & Metric & Difference [95\% CI] & $p$ (boot) & $q$ (BH) & Paired test \\
+        \midrule
+        \taskone   & \cotarm $-$ \direct & $\Delta$AUC & $-0.060$ [$-0.127$, $+0.009$] & 0.084 & 0.151 & McNemar $p=0.056$ \\
+        \taskone   & \cotarm $-$ \filler & $\Delta$AUC & {\bf $-0.090$} [$-0.156$, $-0.024$] & {\bf 0.010} & {\bf 0.048} & McNemar $p=0.015$ \\
+        \taskone   & \direct $-$ \filler & $\Delta$AUC & $-0.030$ [$-0.057$, $-0.006$] & 0.016 & 0.048 & McNemar $p=0.180$ \\
+        \midrule
+        \taskthree & \cotarm $-$ \direct & $\Delta$AUC & $+0.084$ [$+0.008$, $+0.158$] & 0.029 & 0.065 & McNemar $p=0.615$ \\
+        \taskthree & \cotarm $-$ \filler & $\Delta$AUC & {\bf $+0.096$} [$+0.023$, $+0.173$] & {\bf 0.014} & {\bf 0.048} & McNemar $p=1.000$ \\
+        \taskthree & \direct $-$ \filler & $\Delta$AUC & $+0.012$ [$-0.045$, $+0.075$] & 0.672 & 0.672 & McNemar $p=0.332$ \\
+        \midrule
+        \tasktwo   & \cotarm $-$ \direct & $\Delta$MAE & $-0.65$\,y [$-2.18$, $+0.72$] & 0.391 & 0.503 & Wilcoxon $p=0.833$ \\
+        \tasktwo   & \cotarm $-$ \filler & $\Delta$MAE & $-0.39$\,y [$-1.82$, $+0.93$] & 0.586 & 0.659 & Wilcoxon $p=0.784$ \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{
+        Paired condition contrasts on identical rows, clustered paired bootstrap with
+        Benjamini--Hochberg FDR within family. On \taskone, \cotarm is significantly worse than
+        semantically empty filler tokens of the same length. On \taskthree the sign reverses, but
+        \tabref{tab:calibration} shows that advantage is largely a confidence-verbalisation effect.
+        On \tasktwo no contrast is significant. Negative $\Delta$MAE favours \cotarm.
+    }
+    \label{tab:contrasts}
+\end{table}

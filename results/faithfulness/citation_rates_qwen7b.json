@@ -1,0 +1,56 @@
+{
+  "T1_atn": {
+    "n_chains": 140,
+    "citation_rate": {
+      "ab42_pg_per_mg": 0.9214285714285714,
+      "ab40_pg_per_mg": 0.08571428571428572,
+      "ab42_over_ab40_ratio": 0.9142857142857143,
+      "tau_ng_per_mg": 1.0,
+      "ptau_ng_per_mg": 1.0,
+      "ptau_over_tau_ratio": 0.0,
+      "ihc_a_beta": 0.2357142857142857,
+      "ihc_at8": 0.9857142857142858,
+      "ihc_tau2_ffpe": 0.07857142857142857,
+      "ihc_a_syn": 0.0,
+      "ihc_gfap_ffpe": 0.5642857142857143,
+      "ihc_iba1_ffpe": 0.7428571428571429,
+      "a_syn_pg_per_mg": 0.1,
+      "age_years": 0.20714285714285716,
+      "sex_M": 0.014285714285714285,
+      "apoe4": 0.15,
+      "education_years": 0.04285714285714286
+    }
+  },
+  "T3_l2c": {
+    "n_chains": 140,
+    "citation_rate": {
+      "horizon": 0.0,
+      "sex_M": 0.02142857142857143,
+      "EDUC": 0.8357142857142857,
+      "SES": 0.75,
+      "current_age": 0.4785714285714286,
+      "n_prior_visits": 0.03571428571428571,
+      "mr_MMSE": 1.0,
+      "time_since_mr_MMSE": 0.0,
+      "mr_change_MMSE": 0.17142857142857143,
+      "low_MMSE": 0.1,
+      "high_MMSE": 0.15,
+      "mr_nWBV": 1.0,
+      "time_since_mr_nWBV": 0.0,
+      "mr_change_nWBV": 0.05714285714285714,
+      "low_nWBV": 0.06428571428571428,
+      "high_nWBV": 0.02142857142857143,
+      "mr_eTIV": 0.02857142857142857,
+      "mr_ASF": 0.007142857142857143
+    }
+  },
+  "T2_brainage": {
+    "n_chains": 140,
+    "citation_rate": {
+      "sex_M": 0.4928571428571429,
+      "eTIV": 0.95,
+      "nWBV": 1.0,
+      "ASF": 1.0
+    }
+  }
+}

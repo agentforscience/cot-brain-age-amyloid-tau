@@ -1,0 +1,22 @@
+\begin{table}[t]
+    \centering
+    \resizebox{0.8\textwidth}{!}{%
+    \begin{tabular}{@{}lccccc@{}}
+        \toprule
+        Task & Genuine explanation & Shuffled (mismatched) & Difference & Mann--Whitney $p$ & Mistake sensitivity \\
+        \midrule
+        \taskone   & {\bf 3.67}\,/\,4 & 2.78 & $+0.90$ & $9.7\times10^{-24}$ & 0.036 \\
+        \taskthree & 3.30\,/\,4 & 2.51 & $+0.79$ & $1.0\times10^{-31}$ & 0.022 \\
+        \tasktwo   & 3.13\,/\,4 & 2.34 & $+0.79$ & $5.7\times10^{-31}$ & 0.325 \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{
+        The dissociation. The shuffled-explanation control passes---the rubric reliably separates a
+        genuine rationale from one written for a different patient---so the scores are
+        discriminative rather than a rubber stamp. Given that, the headline is that \taskone chains
+        score 3.67/4 for plausibility while responding to a 10$\times$ corruption of their own
+        content 3.6\% of the time. Scores are LLM-proxy ratings, not clinician ratings.
+    }
+    \label{tab:judge}
+\end{table}

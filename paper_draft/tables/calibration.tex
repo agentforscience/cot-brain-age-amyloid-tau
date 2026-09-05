@@ -1,0 +1,27 @@
+\begin{table}[t]
+    \centering
+    \resizebox{0.85\textwidth}{!}{%
+    \begin{tabular}{@{}llccccc@{}}
+        \toprule
+        Task & Condition & Distinct conf.\ values & Conf.\ entropy & Balanced acc. & ROC-AUC & ECE \\
+        \midrule
+        \taskthree & \cotarm    & 10 & 1.913 & 0.666 & {\bf 0.681} & {\bf 0.083} \\
+        \taskthree & \direct & {\bf 2}  & 0.644 & {\bf 0.702} & 0.597 & 0.314 \\
+        \taskthree & \filler & 8  & 1.274 & 0.684 & 0.585 & 0.287 \\
+        \midrule
+        \taskone   & \cotarm    & 10 & 1.533 & 0.649 & 0.616 & 0.289 \\
+        \taskone   & \direct & 8  & 1.189 & 0.689 & 0.676 & 0.305 \\
+        \taskone   & \filler & 8  & 1.279 & {\bf 0.706} & {\bf 0.706} & 0.294 \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{
+        A confound we checked rather than assumed. AUC is computed from the model's \emph{stated}
+        confidence, so confidence granularity can drive it. On \taskthree the \direct condition
+        emits only two distinct confidence values, which mechanically depresses its AUC; on the
+        threshold-free metric \direct is in fact better than \cotarm (0.702 vs.\ 0.666). What \cotarm does
+        genuinely deliver on \taskthree is far better calibration (ECE 0.083 vs.\ 0.314)---a real
+        benefit, but a different one from the hypothesised gain in discrimination.
+    }
+    \label{tab:calibration}
+\end{table}

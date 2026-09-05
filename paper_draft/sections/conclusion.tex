@@ -1,0 +1,31 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We asked whether chain-of-thought reasoning can serve as an interpretability layer for Alzheimer's
+biomarker prediction, and we measured the answer rather than asserting it. Across three tasks built
+from open cohorts, CoT cost accuracy relative to both black-box tabular baselines
+($\Delta$AUC $-0.16$ to $-0.18$; brain-age MAE 11.4\,y vs.\ 5.3\,y) and its own compute-matched
+no-reasoning controls, and on the primary amyloid/tau task its chains were demonstrably post-hoc:
+the answer was already fixed before the reasoning was written ($\aoc = 0.066$, 82.9\% agreement with
+zero chain shown), and corrupting a biomarker value inside the chain barely moved it (3.6\%). A
+blinded rubric with a validated shuffled-explanation control nevertheless rated those chains 3.67/4.
+That dissociation is the paper's central result, and it makes this a warning rather than a null
+result: CoT here produces explanations that would earn clinician trust the model has not justified.
+
+Three qualifications make the picture more than negative. CoT is markedly more faithful on a
+continuous target than on classification (\aoc 0.378 vs.\ 0.066), which the multiple-choice-based
+faithfulness literature could not have detected. The specific measurements a chain cites do causally
+influence its answer (\cfit 1.4--2.1$\times$), even when the surrounding narrative does not. And
+both CoT's usefulness and its faithfulness decrease with model capability---it helps and is
+load-bearing at 1.5B, and hurts and is decorative at 7B---which inverts the deployment incentive.
+
+The takeaway for practitioners is one sentence: report faithfulness alongside accuracy, or do not
+call a reasoning chain an explanation. Four follow-ups are immediate. First, run frontier reasoning
+models on the identical harness; this is a drop-in change and the single highest-information
+experiment. Second, test the classification-versus-regression faithfulness gap directly by framing
+the same underlying quantity as both a binary status and a continuous level. Third, evaluate
+constrained-citation prompting---``name the three measurements you used''---which \cfit suggests may
+retain most of the interpretability value without the accuracy cost of free-form narration. Fourth,
+build the hybrid: a tabular foundation model for the prediction and an LLM for the narration,
+conditioned on the model's attributions and scored by this battery, so the explanation is causally
+anchored by construction.

@@ -1,0 +1,18 @@
+Alzheimer's-disease biomarker models are accurate and rarely adopted, because a number without a
+rationale cannot justify a lumbar puncture or an anti-amyloid therapy. Chain-of-thought (CoT)
+prompting promises an \emph{ante-hoc} rationale emitted by the same forward pass that emits the
+prediction, and is widely assumed to make clinical predictions interpretable. We test that
+assumption directly. On three Alzheimer's tasks built from open cohorts---neuropathological tau
+staging with real quantified amyloid and tau assays, brain-age regression, and longitudinal
+dementia progression---we compare CoT against tabular black boxes and against two matched
+no-reasoning LLM controls, and we measure whether the reasoning chains causally drive the answers
+they accompany. CoT is substantially less accurate than ordinary tabular baselines
+($\Delta$AUC $-0.16$ to $-0.18$; brain-age MAE 11.4\,y versus 5.3\,y, worse than predicting the
+cohort mean), and on the primary task its chains are not load-bearing: forcing an answer after
+showing none of the chain reproduces the full-chain answer 82.9\% of the time, and multiplying a
+biomarker value inside the chain by ten changes the answer 3.6\% of the time. A blinded rubric
+nonetheless rates those same chains 3.67/4 for clinical plausibility. Three findings complicate a
+blanket dismissal: faithfulness is 5.7$\times$ higher on the continuous target than on
+classification, cited features shift predictions 1.4--2.1$\times$ more than uncited ones, and CoT
+both helps and is faithful at 1.5B parameters while hurting and being decorative at 7B---inverting
+the deployment incentive.

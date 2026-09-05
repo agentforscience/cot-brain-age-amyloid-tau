@@ -1,0 +1,25 @@
+\begin{table}[t]
+    \centering
+    \resizebox{0.9\textwidth}{!}{%
+    \begin{tabular}{@{}lccc@{}}
+        \toprule
+        Metric & \textsc{\taskone} (classif.) & \textsc{\taskthree} (classif.) & \textsc{\tasktwo} (regression) \\
+        \midrule
+        Agreement with full-chain answer at 0\% of chain shown & 0.829 & 0.757 & 0.514 \\
+        Early-answering \aoc [95\% CI] & {\bf 0.066} [0.042, 0.093] & 0.090 [0.058, 0.126] & {\bf 0.378} [0.335, 0.425] \\
+        Mistake-injection answer-change rate [95\% CI] & {\bf 0.036} [0.000, 0.079] & 0.022 [0.000, 0.056] & {\bf 0.325} [0.238, 0.428] \\
+        Paraphrase answer-change rate [95\% CI] & 0.014 [0.000, 0.037] & 0.021 [0.000, 0.049] & 0.056 [0.031, 0.084] \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{
+        Causal faithfulness of the \qwenseven chains. On the two classification tasks the chains are
+        essentially post-hoc narration: showing the model none of its own reasoning reproduces the
+        full-chain answer 75--83\% of the time, and a 10$\times$ corruption of a biomarker value
+        inside the chain changes the answer 2--4\% of the time. On the continuous target the picture
+        inverts---\aoc is 5.7$\times$ higher and mistake injection moves the prediction by 0.33\,SD.
+        Uniformly low paraphrase sensitivity shows the chains are not using encoded reasoning; the
+        information is where it appears to be, there is simply very little of it.
+    }
+    \label{tab:faithfulness}
+\end{table}

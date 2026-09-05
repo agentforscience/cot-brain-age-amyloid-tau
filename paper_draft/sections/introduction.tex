@@ -1,0 +1,78 @@
+\section{Introduction}
+\label{sec:intro}
+
+A clinician deciding whether to order a lumbar puncture, a tau PET scan, or an anti-amyloid therapy
+cannot act on a probability alone. This is why Alzheimer's-disease (AD) biomarker models keep
+getting more accurate and keep not being deployed. The field's standard answer is \emph{post-hoc}
+attribution---SHAP over a gradient-boosted tree or a tabular foundation model, exactly what
+\citet{ding2025l2ctabpfn} provide alongside their state-of-the-art progression predictor. Post-hoc
+attributions explain the model; they do not explain a line of reasoning, and they are known to be
+unstable.
+
+Chain-of-thought (CoT) prompting appears to offer something categorically different: an
+\emph{ante-hoc}, natural-language rationale produced by the same forward pass that produces the
+answer~\citep{wei2022cot}. If that rationale is causally connected to the answer, it is a genuinely
+new kind of clinical interpretability---a rationale a clinician can read, check against the
+patient's chart, and disagree with. If it is not, then deploying CoT in a clinical biomarker
+pipeline manufactures unwarranted trust, which is a strictly worse outcome than an honest black box.
+Our main question is which of these two is true.
+
+\para{The gap.} Nobody has measured it. The AD tabular-LLM literature asserts interpretability
+without testing it: \citet{kearney2026tapgpt}, the closest prior work, state explicitly that they
+``did not enable extended thinking or reasoning modes,'' and assess interpretability qualitatively.
+The CoT-faithfulness literature has built rigorous causal tests---early answering, mistake
+injection, paraphrasing, filler tokens~\citep{lanham2023faithfulness}---but has applied them only to
+generic multiple-choice NLP benchmarks, where an unfaithful rationale costs nothing. Worse, every
+one of those tests assumes a discrete answer set: ``did the answer flip?'' is undefined for brain
+age in years, so CoT for clinical \emph{regression} is entirely unmeasured.
+
+\para{What we do.} We run three AD prediction tasks built from open cohorts---neuropathological tau
+staging from real quantified A$\beta$40/A$\beta$42/tau/pTau assays (\taskone), brain-age regression
+on cognitively normal scans (\tasktwo), and longitudinal dementia progression under the
+longitudinal-to-cross-sectional transform of \citet{ding2025l2ctabpfn} (\taskthree)---and we score
+every arm on accuracy, causal faithfulness, and robustness under the same grouped cross-validation,
+the same feature list, and the same perturbations. Critically, CoT is compared not only against
+tabular black boxes but against two matched LLM controls: a \direct condition (same prompt, no
+reasoning) and a compute-matched \filler condition (the assistant turn is prefilled with a run of
+``\texttt{.}'' tokens as long as the measured median chain for that task). Without both controls,
+``CoT helps'' is untestable.
+
+\para{What we find.} CoT is worse, not better. It trails the best tabular baseline by
+$\Delta$AUC $-0.18$ on \taskone and $-0.16$ on \taskthree, and on \tasktwo its 11.43\,y MAE is worse
+than the 9.07\,y of simply predicting the cohort mean age. On \taskone it is significantly
+\emph{worse} than semantically empty filler tokens of identical length ($\Delta$AUC $-0.090$,
+$q=0.048$). And the chains are largely inert: showing the model none of its own reasoning and
+forcing an answer reproduces the full-chain answer 82.9\% of the time (\aoc $=0.066$), while a
+10$\times$ corruption of a biomarker value inside the chain changes the answer 3.6\% of the time.
+A blinded rubric with a validated shuffled-explanation control rates those same chains 3.67/4. The
+chains are persuasive in proportion to how little they do.
+
+Three results cut against a blanket dismissal, and they are the reason this is more than a null
+result. Faithfulness is 5.7$\times$ higher on the continuous target than on classification
+(\aoc $0.378$ vs.\ $0.066$). Our new Cited-Feature Intervention Test shows that the specific
+biomarkers a chain names shift its prediction 1.4--2.1$\times$ more than the ones it ignores. And
+the effect reverses with scale: at 1.5B parameters CoT \emph{improves} accuracy
+($\Delta$AUC $+0.082$, $p=0.012$) and its chains are 3.7$\times$ more load-bearing than the 7B
+model's---CoT is faithful exactly where the model needs it to compute, and decorative exactly where
+it does not, which is backwards from the deployment incentive.
+
+In summary, our main contributions are:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We provide the first measurement of CoT \emph{causal} faithfulness on clinical biomarker
+    tasks, transplanting the intervention battery of \citet{lanham2023faithfulness} onto real
+    quantified amyloid/tau neuropathology and two AD cohort tasks.
+    \item We redefine that battery for a continuous target, replacing answer-flip rate with a
+    normalised answer shift $|\Delta\hat{y}|/\mathrm{SD}(\hat{y})$, and use it to show that CoT
+    faithfulness is systematically higher for regression than for classification.
+    \item We propose two automatable interpretability metrics: \cfit, which perturbs the features a
+    chain cites against the ones it ignores, and \esa, which rank-correlates citation frequency
+    against independently measured permutation importance.
+    \item We conduct a controlled comparison against black-box baselines \emph{and} two matched
+    LLM controls, and document a dissociation---3.67/4 rated plausibility with 3.6\% causal
+    sensitivity---that we argue should disqualify CoT as a clinical interpretability layer unless
+    faithfulness is reported alongside accuracy.
+\end{itemize}
+
+\secref{sec:related} positions this against prior work, \secref{sec:method} describes the tasks,
+arms, and metrics, \secref{sec:results} reports accuracy, faithfulness, robustness, and the clinical
+brain-age endpoint, and \secref{sec:discussion} discusses what survives and what does not.

@@ -1,0 +1,261 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Accuracy: CoT loses to black boxes and to its own controls}
+\label{sec:results:acc}
+
+\tabref{tab:accuracy} reports out-of-fold accuracy for every arm. \cotarm does not match the best
+tabular baseline on any task, and the gaps are far outside the pre-declared equivalence margins.
+On \taskone, \xgb reaches AUC 0.794 against \cotarm's 0.616 ($\Delta = -0.178$, margin 0.05). On
+\taskthree, \tabpfn reaches 0.842 against \cotarm's 0.681 ($\Delta = -0.161$). On \tasktwo, \tabpfn
+reaches 5.28\,y MAE against \cotarm's 11.43\,y ($\Delta = +6.15$\,y, margin 1.5\,y)---and every LLM
+condition on \tasktwo is worse than the 9.07\,y of simply predicting the cohort mean age. On that
+task the LLM arm is not merely behind the baselines; it has negative practical value. The
+hypothesis that a reasoning LLM matches black-box accuracy is refuted on all three tasks.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/fig1_accuracy.png}
+    \caption{
+        Accuracy by arm and family across the three tasks, with donor/subject-clustered bootstrap
+        CIs. Tabular arms are consistently above the LLM arms on the two classification tasks, and
+        on \tasktwo (right, lower is better) all three LLM conditions sit above the trivial
+        mean-age predictor.
+    }
+    \label{fig:accuracy}
+\end{figure}
+
+\input{tables/accuracy}
+
+\para{Does CoT at least beat its own no-reasoning controls?} \tabref{tab:contrasts} answers with
+paired contrasts on identical rows. On \taskone it does not: \cotarm is $0.090$ AUC \emph{below}
+compute-matched filler tokens (95\% CI $[-0.156, -0.024]$, $q=0.048$, McNemar $p=0.015$), and
+$0.060$ below \direct. Reasoning here is worse than emitting the same number of meaningless tokens.
+On \taskthree the sign reverses ($+0.096$ over \filler, $q=0.048$), and on \tasktwo no contrast is
+significant.
+
+\para{The \taskthree reversal is mostly a confidence artefact.} Classification AUC is computed from
+the model's stated confidence, so confidence granularity is a candidate explanation, and
+\tabref{tab:calibration} shows it is the right one. The \direct condition on \taskthree emits only
+\emph{two} distinct confidence values, which mechanically caps its AUC. On balanced accuracy, which
+does not depend on confidence resolution, \direct is in fact better than \cotarm (0.702 vs.\ 0.666).
+What \cotarm genuinely delivers on \taskthree is much better calibration---ECE 0.083 against 0.314 for
+\direct and 0.287 for \filler (\figref{fig:calibration}). Communicating uncertainty well is a real
+clinical good, but it is a different benefit from the one the interpretability hypothesis predicts.
+
+\input{tables/contrasts}
+\input{tables/calibration}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.9\linewidth]{figures/fig6_calibration.png}
+    \caption{
+        Confidence resolution and calibration. \cotarm spreads its confidence over ten distinct values
+        on both classification tasks, whereas \direct collapses to two on \taskthree. The
+        reliability curves show \cotarm is the only well-calibrated condition on \taskthree
+        (ECE 0.083), and that all three conditions are similarly overconfident on \taskone.
+    }
+    \label{fig:calibration}
+\end{figure}
+
+\subsection{Faithfulness: the chains are not doing the work}
+\label{sec:results:faith}
+
+\tabref{tab:faithfulness} and \figref{fig:early} report the intervention battery. On \taskone,
+showing the model \emph{none} of its own reasoning and forcing an answer reproduces the full-chain
+answer 82.9\% of the time; the early-answering curve is nearly flat, giving
+$\aoc = 0.066$ $[0.042, 0.093]$. Corrupting a biomarker value inside the chain by a factor of ten
+changes the final answer 3.6\% of the time $[0.000, 0.079]$. \taskthree is similar (agreement 0.757,
+$\aoc = 0.090$, mistake sensitivity 0.022). On these tasks the chain is post-hoc narration of an
+answer that already exists.
+
+Paraphrase sensitivity is uniformly low (1.4--5.6\%), which rules out the alternative explanation
+that the chains carry information in an encoded or steganographic form. The information is where it
+appears to be; there is simply very little of it.
+
+\para{Regression inverts the picture.} On \tasktwo, \aoc is 0.378 $[0.335, 0.425]$---5.7$\times$
+higher than \taskone---and mistake injection moves the prediction by 0.33\,SD. The chain is
+genuinely load-bearing when the target is continuous. To our knowledge this is the first evidence
+that CoT faithfulness differs systematically between classification and regression, and it runs
+opposite to the accuracy numbers, since \tasktwo is the task the LLM performs worst on. The
+plausible mechanism is that a two-way choice can be produced in a single forward pass and then
+narrated, whereas producing a specific number appears to require the intermediate arithmetic-like
+steps to actually be written.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/fig2_early_answering.png}
+    \caption{
+        Early answering. Each curve shows how often the answer produced from a truncated chain
+        matches the full-chain answer, as a function of how much of the chain the model is shown.
+        A faithful chain should start low and climb; the two classification tasks start at
+        0.76--0.83, meaning the answer is essentially fixed before any reasoning is revealed. The
+        continuous target (\tasktwo, using the normalised answer shift of \eqref{eq:shift}) is the
+        only task with a substantial area over the curve.
+    }
+    \label{fig:early}
+\end{figure}
+
+\input{tables/faithfulness}
+
+\subsection{\cfit and \esa}
+\label{sec:results:cfit}
+
+\tabref{tab:cfit_esa} reports the two new metrics. \cfit is positive: perturbing the features a
+chain names as decisive shifts its prediction 1.39$\times$ (\taskone), 2.13$\times$ (\taskthree,
+$p=0.0005$) and 1.54$\times$ (\tasktwo, $p=0.007$) more than perturbing an equal-sized random set of
+features the chain ignores. This is the one clear positive for CoT-as-interpretability: even when
+the global chain is post-hoc, the specific measurements it points at do carry causal weight. Because
+our citation parser is a deliberately conservative lexical matcher, paraphrastic citations are
+undercounted and this estimate is biased toward the null.
+
+\esa is negative on the primary task. Citation frequency and permutation importance are essentially
+uncorrelated on \taskone ($\rho = 0.126$, $p = 0.629$) and \tasktwo ($\rho = 0.105$, $p = 0.895$),
+and only modestly aligned on \taskthree ($\rho = 0.491$, $p = 0.039$). The reason is visible in
+\figref{fig:esa}: the chains cite nearly every biomarker in nearly every case---total tau and pTau at
+a 100\% rate, AT8 at 98.6\%---so citation frequency carries almost no information about which
+biomarker matters. The chains \emph{do} mention AT8, the single decisive feature by permutation
+importance ($\Delta$AUC 0.110, four times the next feature); they simply mention it no more than
+they mention uninformative ones. An explanation that names everything explains nothing.
+
+\input{tables/cfit_esa}
+
+\begin{figure}[t]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{figures/fig4_cfit_judge.png}
+        \caption{\cfit and blinded rubric}
+        \label{fig:cfit}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{figures/fig5_esa.png}
+        \caption{\esa}
+        \label{fig:esa}
+    \end{subfigure}
+    \caption{
+        \captiona \cfit shift for cited versus uncited features, alongside blinded rubric scores for
+        genuine and shuffled rationales. \captionb Per-feature citation frequency against
+        independently measured permutation importance. The chains saturate their citations---most
+        features are named in most cases---so the ranking carries little signal on \taskone.
+    }
+    \label{fig:cfit_esa}
+\end{figure}
+
+\subsection{Robustness: supported in slope, vacuous in level}
+\label{sec:results:robust}
+
+\tabref{tab:robustness} and \figref{fig:robustness} report the perturbation sweeps. The \cotarm arm is
+essentially flat under missingness on \taskone ($+2.4\%$ from clean to 50\% MCAR) and \tasktwo
+($-4.0\%$, \ie slightly better), while \xgb loses 20.6\% of its AUC on \taskone and more than
+doubles its MAE on \tasktwo. This matches the observation of \citet{kearney2026tapgpt} that LLM
+prompts represent missingness natively and require no imputation.
+
+But flatness is not an advantage when the level is low. On \taskone, \cotarm at 50\% missingness (0.609)
+is still below \xgb at 50\% missingness (0.630). On \tasktwo the crossover is real and quantitative:
+\xgb degrades past the \cotarm arm somewhere between 20\% and 30\% missingness and reaches 14.23\,y at
+50\% against \cotarm's 10.83\,y. \tabpfn, however, stays better than the LLM at every level tested
+(8.01\,y at 50\% MCAR). The actionable conclusion is therefore about tabular foundation models, not
+about reasoning. And on \taskthree the pattern does not hold at all: \cotarm is the \emph{least} robust
+arm ($-22.2\%$), worse than every tabular baseline.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/fig3_robustness.png}
+    \caption{
+        Performance under MCAR missingness and Gaussian feature noise, with every arm receiving the
+        same corrupted values. The LLM curves are nearly horizontal, but they are horizontal at a
+        level the tabular baselines only reach under extreme corruption. \tabpfn dominates the LLM
+        arm at every perturbation level on \tasktwo.
+    }
+    \label{fig:robustness}
+\end{figure}
+
+\input{tables/robustness}
+
+\subsection{The clinical endpoint: a brain-age gap with no disease signal}
+\label{sec:results:bag}
+
+A brain-age model is clinically interesting only if the gap between predicted and chronological age
+tracks disease. \tabref{tab:brainage} compares the age-bias-corrected gap between out-of-fold
+controls and demented scans. The conventional models reproduce the textbook finding of roughly four
+years of apparent brain ageing in dementia ($+4.26$\,y for \tabpfn, Cohen's $d = 0.730$,
+AUC 0.701). The \cotarm-derived gap is $+0.15$\,y, with AUC 0.490 $[0.435, 0.547]$ and $p = 0.670$: no
+disease signal whatsoever. This is the most clinically legible result in the study. The reasoning
+chains are articulate about atrophy and ageing, and the quantity they produce is diagnostically
+empty.
+
+\input{tables/brainage}
+
+\subsection{Blinded plausibility: persuasive in proportion to how little it does}
+\label{sec:results:judge}
+
+\tabref{tab:judge} reports the blinded rubric. The shuffled-explanation control passes on all three
+tasks---genuine rationales score 0.79--0.90 points above rationales written for a different patient,
+with $p < 10^{-23}$---so the rubric discriminates rather than rubber-stamping. Given that validity
+check, the headline is the dissociation. On \taskone the chains score 3.67/4 overall, including
+4.00/4 for absence of fabrication and 3.96/4 for biological validity, while responding to a
+10$\times$ corruption of their own content 3.6\% of the time. The chains are rated as
+near-perfectly non-fabricating and biologically sound while being almost entirely disconnected from
+the computation that produced the answer. We note that these are LLM-proxy scores produced by the
+same base model that generated the chains, which risks self-preference; see \secref{sec:discussion}.
+
+\input{tables/judge}
+
+\subsection{Model size: CoT is faithful exactly where it is needed}
+\label{sec:results:size}
+
+\tabref{tab:modelsize} and \figref{fig:modelsize} report the cleanest causal story in the study, with
+accuracy and faithfulness reported jointly as \citet{bentham2024disguised} require. \qwensmall
+cannot do \taskone without reasoning: its \direct AUC is 0.504, indistinguishable from chance. CoT
+lifts it to 0.586 ($\Delta$AUC $+0.082$ $[+0.018, +0.143]$, $p=0.012$), and its chains are
+correspondingly load-bearing---\aoc 0.246 against the 7B model's 0.066 (3.7$\times$) and mistake
+sensitivity 0.218 against 0.036 (6$\times$). \qwenseven already knows the answer without reasoning
+(\direct AUC 0.676); its chains are decorative, and making it verbalise them costs 0.060 AUC.
+
+CoT is faithful exactly where the model needs it to compute, and decorative exactly where it does
+not. This is precisely backwards from the deployment incentive: a clinical system would deploy the
+larger, more accurate model, and would therefore get the least trustworthy explanations.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.9\linewidth]{figures/fig7_model_size.png}
+    \caption{
+        Accuracy benefit of CoT and causal faithfulness of the resulting chains, for \qwensmall and
+        \qwenseven on \taskone. Both move together, and both move \emph{down} with capability: the
+        smaller model gains from reasoning and reasons faithfully, the larger model loses from
+        reasoning and narrates.
+    }
+    \label{fig:modelsize}
+\end{figure}
+
+\input{tables/modelsize}
+
+\subsection{Error analysis}
+\label{sec:results:errors}
+
+\para{Reasoning past the decisive biomarker (\taskone).} In the first \cotarm error on \taskone (truth:
+early tau; predicted: advanced tau, confidence 85), the chain reads: ``The Abeta-42/40 ratio is high
+(4.575), indicating significant amyloid burden. High total tau (1.67 ng/mg) and phospho-tau (1.689
+ng/mg) suggest active tau pathology\ldots{} \emph{The AT8 pTau immunoreactivity is minimal, but} the
+overall tau burden and the presence of amyloid plaques suggest a more advanced stage of
+neurofibrillary tangles.'' AT8 immunoreactivity is the single most informative feature on this task.
+The chain notices it, explicitly flags it as minimal, and then overrides it with weaker evidence.
+This is the \esa result made concrete: right facts, wrong weighting.
+
+\para{Plausible, well-hedged and wrong (\taskthree).} ``The recent MMSE score of 27 is within normal
+limits\ldots{} nWBV at 0.806 is close to the average\ldots{} Given the lack of significant changes
+in MMSE and nWBV, and the absence of other markers of neurodegeneration like amyloid or tau
+pathology (which are not provided), the risk of dementia is low.'' Truth: demented. A systematic
+bias accompanies this: on \taskthree the \cotarm arm predicts dementia in only 29.1\% of cases against
+a base rate of 47.1\%, \ie it under-calls progression---the clinically costlier direction of error.
+
+\para{Longer chains do not rescue harder cases.} Chain length is negatively associated with
+correctness: point-biserial $r = -0.114$ ($p = 0.027$) on \taskone and $r = -0.178$ ($p = 0.008$) on
+\taskthree.
+
+\para{Parsing integrity.} Final answer-parse success was 100.0\% for \qwenseven on all three tasks
+and 99.5\% for \qwensmall, so no result depends on discarded generations. Where a generation failed
+to emit an answer it was re-run with a forced continuation rather than dropped; the fraction
+requiring that was 0.00\%, 0.00\% and 0.19\% for \qwenseven on \taskone/\tasktwo/\taskthree, against
+45.6\% for the \qwensmall \cotarm condition, which frequently exceeded the 512-token budget.

@@ -1,0 +1,109 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Answering the question}
+
+Can chain-of-thought serve as an interpretability layer for Alzheimer's biomarker models? In this
+setting, no. CoT did not match black-box accuracy on any of the three tasks, it did not reliably
+beat its own no-reasoning controls, and on the primary amyloid/tau task its chains failed the causal
+battery decisively. The combination that matters, though, is not ``CoT is inaccurate''---that could
+be fixed with a better model. It is \emph{high rated plausibility with near-zero causal
+dependence}: 3.67/4 on a rubric with a validated discriminative control, alongside a 3.6\%
+sensitivity to a tenfold corruption of the chain's own content. An explanation that is persuasive
+and inert is worse than no explanation, because it transfers unearned confidence to the clinician.
+
+\subsection{What survives}
+
+Three components of the hypothesis survive in modified form, and they are why we regard this as a
+warning rather than a null result.
+
+\para{Robustness is partly vindicated, but the lesson is about tabular foundation models.} The LLM
+arm is genuinely flat under missingness where \xgb collapses, and there is a real crossover on
+brain age beyond roughly 25\% missingness. This matches \citet{kearney2026tapgpt}: LLM prompts
+represent missing cells natively and need no imputation. But \tabpfn dominates the LLM at every
+level tested, and on \taskthree the \cotarm arm is the least robust of all. ``Use an LLM for
+robustness'' is not the right conclusion; ``use a tabular foundation model'' is.
+
+\para{\cfit supports a weaker, more interesting claim.} Even when the chain as a whole is post-hoc,
+the individual measurements it names are 1.4--2.1$\times$ more influential than the ones it ignores.
+Local citations are informative even when the global narrative is not. This suggests a constrained
+citation format---``name the three measurements you used'' plus the answer---might retain most of
+the interpretability value at a fraction of the accuracy cost of free-form narration.
+
+\para{Calibration improves under CoT on \taskthree} (ECE 0.083 vs.\ 0.314). Communicating
+uncertainty well is a genuine clinical good, and it is a benefit the interpretability hypothesis did
+not anticipate.
+
+\subsection{The finding we did not anticipate}
+
+CoT faithfulness is markedly higher for regression than for classification (\aoc 0.378 vs.\ 0.066;
+mistake sensitivity 0.325 vs.\ 0.036). The entire faithfulness literature is built on
+multiple-choice benchmarks, and we had to invent a continuous-target version of the battery to ask
+the question at all. If this replicates, it implies that the field's pessimism about CoT
+faithfulness may be partly an artefact of its answer format---and that CoT's interpretability value
+may be highest precisely on the continuous clinical endpoints (biomarker levels, atrophy rates,
+time-to-conversion) that matter most in AD. It is also the finding we consider most likely to
+replicate and most worth testing first.
+
+\subsection{Relation to prior work}
+
+We corroborate \citet{anon2026dementiaspeech}, who found text rationales gave inferior
+dementia-classification accuracy versus LLM-free baselines, and extend that from speech to
+quantitative biomarker tables. We corroborate and sharpen the size-versus-faithfulness result of
+\citet{lanham2023faithfulness}, now with the accuracy control \citet{bentham2024disguised} demanded
+and in a clinical domain: at 1.5B, CoT is both useful and faithful; at 7B it is neither. And we
+supply the measurement that \citet{ding2025l2ctabpfn} and \citet{kearney2026tapgpt} both omit.
+\citet{kearney2026tapgpt} disabled reasoning modes; our results suggest that decision was correct
+for accuracy purposes, and that had they enabled reasoning, the resulting explanations would have
+looked convincing while being causally inert.
+
+Separately, our amendment A2 is a reportable data-provenance finding: an \ltoc-style pipeline
+applied naively to OASIS-2 yields AUC $=1.000$ for every model, because OASIS derives its dementia
+label from CDR and the lagged CDR features are the label. Anyone replicating
+\citet{ding2025l2ctabpfn} on OASIS should de-circularise the feature block before reporting numbers.
+
+\subsection{Limitations}
+
+\para{Data and scope.} ADNI, TADPOLE, AIBL and OASIS-3 are all access-gated, so we replicated
+protocols on open cohorts; absolute numbers are \emph{not} comparable to the published tables of
+\citet{ding2025l2ctabpfn} or \citet{kearney2026tapgpt}, and only within-study contrasts are valid.
+\act is post-mortem tissue rather than in-vivo PET, so \taskone tests neuropathological rather than
+imaging \atn, and its age variable is censored above 89. The cohorts are small (107 donors, 150
+subjects, 207 subjects), so CIs are wide and a $\Delta$AUC of 0.03 is not resolvable here---which is
+why equivalence margins were pre-declared rather than chosen post hoc. We had no plasma biomarkers,
+no PET and no multi-omics. We tested one model family at two sizes; a frontier reasoning model might
+behave differently, and no API keys were available in our environment, so this is the single most
+important follow-up.
+
+\para{Methodology.} The clinician panel could not be convened and was not simulated. The rubric is
+scored by an LLM, and by the same base model that produced the chains, which risks self-preference;
+the shuffled control establishes that the rubric discriminates, not that its absolute scores match
+expert judgement. \cfit and \esa depend on a hand-written lexical citation table that is
+deliberately conservative, so both are biased toward the null. The \qwensmall \cotarm arm has a 45.6\%
+forced-answer rate, so its faithfulness numbers are computed on chains that were sometimes truncated
+before the forced answer; three independent metrics support the direction of the model-size
+conclusion, but its magnitude is uncertain. The LLM robustness sweep used a 150-case subset and
+fewer perturbation levels than the tabular sweep, so the LLM noise slopes are two-point fits and
+should be read as coarse. The brain-age bias correction is fitted on control out-of-fold predictions
+and the controls are then one of the two compared groups---standard practice, but mildly circular,
+which makes the demented-group gap ($+4.26$\,y for \tabpfn) the more robust statistic than the AUC.
+Two targets or feature sets were amended after inspecting baseline behaviour; both changes were made
+before any LLM was run and both are audited in the results, but they are researcher degrees of
+freedom and we disclose them as such. Finally, greedy decoding with a single run removes sampling as
+a confound between arms but gives no seed-to-seed variance estimate; our uncertainty is quantified
+over cases, not over generations.
+
+\para{What would invalidate these conclusions.} A frontier reasoning model showing high faithfulness
+\emph{and} competitive accuracy on the same three tasks would overturn the central claim; our result
+may be specific to a 7B model that was not reasoning-tuned.
+
+\subsection{Implications for clinical deployment}
+
+Any deployment of CoT as a clinical interpretability layer should be required to report a
+faithfulness measurement alongside its accuracy. The battery used here costs roughly six extra
+generations per case and is fully automatable, so there is no practical excuse for omitting it. On
+this evidence, post-hoc SHAP over a tabular foundation model remains both the more accurate and the
+more honest option. The broader point generalises past this domain: if a chain can be simultaneously
+3.67/4 plausible and 3.6\% causal, then human-rated interpretability and machine faithfulness are
+measuring different things, and clinical AI standards that rely on the former are measuring the
+wrong one.
